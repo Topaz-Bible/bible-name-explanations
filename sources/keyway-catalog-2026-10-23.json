@@ -1,0 +1,1103 @@
+{
+  "note": "Snapshot of the Keyway names catalog (keyway-data/lexicon/names/explanations.json) the list was seeded from, 2026-10-23.",
+  "explanations": {
+    "G1115": [
+      {
+        "name": [
+          "V.MAT.027.033:006a"
+        ],
+        "because": [
+          "V.MAT.027.033:009a",
+          "V.MAT.027.033:010a"
+        ],
+        "kind": "gloss",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "G1694": [
+      {
+        "name": [
+          "V.MAT.001.023:015a"
+        ],
+        "because": [
+          "V.MAT.001.023:019a",
+          "V.MAT.001.023:022a"
+        ],
+        "kind": "gloss",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "G184": [
+      {
+        "name": [
+          "V.ACT.001.019:017a"
+        ],
+        "because": [
+          "V.ACT.001.019:020a",
+          "V.ACT.001.019:021a"
+        ],
+        "kind": "gloss",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "G2381": [
+      {
+        "name": [
+          "V.JHN.011.016:003a"
+        ],
+        "because": [
+          "V.JHN.011.016:006a",
+          "V.JHN.011.016:006a"
+        ],
+        "kind": "gloss",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "G2424G": [
+      {
+        "name": [
+          "V.MAT.001.021:009a"
+        ],
+        "because": [
+          "V.MAT.001.021:010a",
+          "V.MAT.001.021:019a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "G2786": [
+      {
+        "name": [
+          "V.JHN.001.042:021a"
+        ],
+        "because": [
+          "V.JHN.001.042:024a",
+          "V.JHN.001.042:024a"
+        ],
+        "kind": "gloss",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "G3323": [
+      {
+        "name": [
+          "V.JHN.001.041:014a"
+        ],
+        "because": [
+          "V.JHN.001.041:019a",
+          "V.JHN.001.041:019a"
+        ],
+        "kind": "gloss",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "G4074G": [
+      {
+        "name": [
+          "V.MAT.016.018:008a"
+        ],
+        "because": [
+          "V.MAT.016.018:009a",
+          "V.MAT.016.018:013a"
+        ],
+        "kind": "renaming",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "G4532": [
+      {
+        "name": [
+          "V.HEB.007.002:017a"
+        ],
+        "because": [
+          "V.HEB.007.002:021a",
+          "V.HEB.007.002:021a"
+        ],
+        "kind": "gloss",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "G4611": [
+      {
+        "name": [
+          "V.JHN.009.007:010a"
+        ],
+        "because": [
+          "V.JHN.009.007:013a",
+          "V.JHN.009.007:013a"
+        ],
+        "kind": "gloss",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "G5000": [
+      {
+        "name": [
+          "V.ACT.009.036:008a"
+        ],
+        "because": [
+          "V.ACT.009.036:012a",
+          "V.ACT.009.036:012a"
+        ],
+        "kind": "gloss",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "G921G": [
+      {
+        "name": [
+          "V.ACT.004.036:005a"
+        ],
+        "because": [
+          "V.ACT.004.036:012a",
+          "V.ACT.004.036:013a"
+        ],
+        "kind": "gloss",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "G993": [
+      {
+        "name": [
+          "V.MRK.003.017:016a"
+        ],
+        "because": [
+          "V.MRK.003.017:019a",
+          "V.MRK.003.017:020a"
+        ],
+        "kind": "gloss",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H1188": [
+      {
+        "name": [
+          "V.2SA.005.020:022a",
+          "V.2SA.005.020:023a"
+        ],
+        "because": [
+          "V.2SA.005.020:009a",
+          "V.2SA.005.020:015a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      },
+      {
+        "name": [
+          "V.1CH.014.011:022a",
+          "V.1CH.014.011:023a"
+        ],
+        "because": [
+          "V.1CH.014.011:009a",
+          "V.1CH.014.011:015a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H123H": [
+      {
+        "name": [
+          "V.GEN.025.030:018a"
+        ],
+        "because": [
+          "V.GEN.025.030:005a",
+          "V.GEN.025.030:013a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H1283H": [
+      {
+        "name": [
+          "V.1CH.007.023:010a"
+        ],
+        "because": [
+          "V.1CH.007.023:011a",
+          "V.1CH.007.023:014a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "bdb",
+          "kjv"
+        ]
+      }
+    ],
+    "H1410G": [
+      {
+        "name": [
+          "V.GEN.030.011:008a"
+        ],
+        "because": [
+          "V.GEN.030.011:003q",
+          "V.GEN.030.011:004q"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H1537G": [
+      {
+        "name": [
+          "V.JOS.005.009:015a"
+        ],
+        "because": [
+          "V.JOS.005.009:005a",
+          "V.JOS.005.009:010a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "bdb"
+        ]
+      }
+    ],
+    "H1567": [
+      {
+        "name": [
+          "V.GEN.031.048:013a"
+        ],
+        "because": [
+          "V.GEN.031.048:003a",
+          "V.GEN.031.048:008a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H1647G": [
+      {
+        "name": [
+          "V.EXO.002.022:006a"
+        ],
+        "because": [
+          "V.EXO.002.022:007a",
+          "V.EXO.002.022:012a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "bdb",
+          "kjv"
+        ]
+      },
+      {
+        "name": [
+          "V.EXO.018.003:007a"
+        ],
+        "because": [
+          "V.EXO.018.003:008a",
+          "V.EXO.018.003:013a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H1835H": [
+      {
+        "name": [
+          "V.GEN.030.006:015a"
+        ],
+        "because": [
+          "V.GEN.030.006:003a",
+          "V.GEN.030.006:010a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H2074": [
+      {
+        "name": [
+          "V.GEN.030.020:019a"
+        ],
+        "because": [
+          "V.GEN.030.020:003a",
+          "V.GEN.030.020:015a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H2332": [
+      {
+        "name": [
+          "V.GEN.003.020:005a"
+        ],
+        "because": [
+          "V.GEN.003.020:006a",
+          "V.GEN.003.020:011a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H3041": [
+      {
+        "name": [
+          "V.2SA.012.025:008a"
+        ],
+        "because": [
+          "V.2SA.012.025:009a",
+          "V.2SA.012.025:010a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "H3063G": [
+      {
+        "name": [
+          "V.GEN.029.035:014a"
+        ],
+        "because": [
+          "V.GEN.029.035:006a",
+          "V.GEN.029.035:009a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H3130G": [
+      {
+        "name": [
+          "V.GEN.030.024:004a"
+        ],
+        "because": [
+          "V.GEN.030.024:006a",
+          "V.GEN.030.024:010a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H3157K": [
+      {
+        "name": [
+          "V.HOS.001.004:006a"
+        ],
+        "because": [
+          "V.HOS.001.004:007a",
+          "V.HOS.001.004:020a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H3258H": [
+      {
+        "name": [
+          "V.1CH.004.009:008a"
+        ],
+        "because": [
+          "V.1CH.004.009:010a",
+          "V.1CH.004.009:012a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H3290": [
+      {
+        "name": [
+          "V.GEN.025.026:011a"
+        ],
+        "because": [
+          "V.GEN.025.026:005a",
+          "V.GEN.025.026:008a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "H3458G": [
+      {
+        "name": [
+          "V.GEN.016.011:011a"
+        ],
+        "because": [
+          "V.GEN.016.011:012a",
+          "V.GEN.016.011:016a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "bdb",
+          "kjv"
+        ]
+      }
+    ],
+    "H3478": [
+      {
+        "name": [
+          "V.GEN.032.028:009a"
+        ],
+        "because": [
+          "V.GEN.032.028:010a",
+          "V.GEN.032.028:016a"
+        ],
+        "kind": "renaming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H3485G": [
+      {
+        "name": [
+          "V.GEN.030.018:012a"
+        ],
+        "because": [
+          "V.GEN.030.018:003a",
+          "V.GEN.030.018:009a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H350": [
+      {
+        "name": [
+          "V.1SA.004.021:003a",
+          "V.1SA.004.021:004a"
+        ],
+        "because": [
+          "V.1SA.004.021:006a",
+          "V.1SA.004.021:008a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "H3818": [
+      {
+        "name": [
+          "V.HOS.001.009:004a",
+          "V.HOS.001.009:005a"
+        ],
+        "because": [
+          "V.HOS.001.009:006a",
+          "V.HOS.001.009:013a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H3819": [
+      {
+        "name": [
+          "V.HOS.001.006:009a",
+          "V.HOS.001.006:010a"
+        ],
+        "because": [
+          "V.HOS.001.006:011a",
+          "V.HOS.001.006:022a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H3878": [
+      {
+        "name": [
+          "V.GEN.029.034:020a"
+        ],
+        "because": [
+          "V.GEN.029.034:006a",
+          "V.GEN.029.034:015a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H416": [
+      {
+        "name": [
+          "V.GEN.035.007:006a",
+          "V.GEN.035.007:007a",
+          "V.GEN.035.007:008a"
+        ],
+        "because": [
+          "V.GEN.035.007:009a",
+          "V.GEN.035.007:016a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H4519G": [
+      {
+        "name": [
+          "V.GEN.041.051:006a"
+        ],
+        "because": [
+          "V.GEN.041.051:007a",
+          "V.GEN.041.051:016a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H4532": [
+      {
+        "name": [
+          "V.EXO.017.007:004a"
+        ],
+        "because": [
+          "V.EXO.017.007:006a",
+          "V.EXO.017.007:019a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "H461H": [
+      {
+        "name": [
+          "V.EXO.018.004:003a"
+        ],
+        "because": [
+          "V.EXO.018.004:004a",
+          "V.EXO.018.004:010a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H4755": [
+      {
+        "name": [
+          "V.RUT.001.020:009a"
+        ],
+        "because": [
+          "V.RUT.001.020:010a",
+          "V.RUT.001.020:014a"
+        ],
+        "kind": "renaming",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "H4785": [
+      {
+        "name": [
+          "V.EXO.015.023:015a"
+        ],
+        "because": [
+          "V.EXO.015.023:008a",
+          "V.EXO.015.023:010a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "H4809G": [
+      {
+        "name": [
+          "V.EXO.017.007:005a"
+        ],
+        "because": [
+          "V.EXO.017.007:006a",
+          "V.EXO.017.007:019a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "H4872": [
+      {
+        "name": [
+          "V.EXO.002.010:011a"
+        ],
+        "because": [
+          "V.EXO.002.010:013a",
+          "V.EXO.002.010:016a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H5037": [
+      {
+        "name": [
+          "V.1SA.025.025:017a"
+        ],
+        "because": [
+          "V.1SA.025.025:013a",
+          "V.1SA.025.025:019a"
+        ],
+        "kind": "gloss",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "H5146": [
+      {
+        "name": [
+          "V.GEN.005.029:004a"
+        ],
+        "because": [
+          "V.GEN.005.029:006a",
+          "V.GEN.005.029:015a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "bdb",
+          "kjv"
+        ]
+      }
+    ],
+    "H5321G": [
+      {
+        "name": [
+          "V.GEN.030.008:012a"
+        ],
+        "because": [
+          "V.GEN.030.008:003a",
+          "V.GEN.030.008:009a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H6215G": [
+      {
+        "name": [
+          "V.GEN.025.025:009a"
+        ],
+        "because": [
+          "V.GEN.025.025:003a",
+          "V.GEN.025.025:006a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "H6230": [
+      {
+        "name": [
+          "V.GEN.026.020:013a"
+        ],
+        "because": [
+          "V.GEN.026.020:014a",
+          "V.GEN.026.020:016a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H6389": [
+      {
+        "name": [
+          "V.GEN.010.025:007a"
+        ],
+        "because": [
+          "V.GEN.010.025:008a",
+          "V.GEN.010.025:011a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula"
+        ]
+      },
+      {
+        "name": [
+          "V.1CH.001.019:007a"
+        ],
+        "because": [
+          "V.1CH.001.019:008a",
+          "V.1CH.001.019:011a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H6439G": [
+      {
+        "name": [
+          "V.GEN.032.030:005a"
+        ],
+        "because": [
+          "V.GEN.032.030:006a",
+          "V.GEN.032.030:013a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H6557": [
+      {
+        "name": [
+          "V.GEN.038.029:014a"
+        ],
+        "because": [
+          "V.GEN.038.029:008a",
+          "V.GEN.038.029:011a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H669G": [
+      {
+        "name": [
+          "V.GEN.041.052:005a"
+        ],
+        "because": [
+          "V.GEN.041.052:006a",
+          "V.GEN.041.052:010a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H67": [
+      {
+        "name": [
+          "V.GEN.050.011:018a",
+          "V.GEN.050.011:019a"
+        ],
+        "because": [
+          "V.GEN.050.011:010a",
+          "V.GEN.050.011:013a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H6914": [
+      {
+        "name": [
+          "V.NUM.011.034:006a",
+          "V.NUM.011.034:007a"
+        ],
+        "because": [
+          "V.NUM.011.034:008a",
+          "V.NUM.011.034:013a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H7014B": [
+      {
+        "name": [
+          "V.GEN.004.001:009a"
+        ],
+        "because": [
+          "V.GEN.004.001:011a",
+          "V.GEN.004.001:014a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "H72": [
+      {
+        "name": [
+          "V.1SA.007.012:013a",
+          "V.1SA.007.012:014a"
+        ],
+        "because": [
+          "V.1SA.007.012:016a",
+          "V.1SA.007.012:019a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "review"
+        ]
+      }
+    ],
+    "H7205": [
+      {
+        "name": [
+          "V.GEN.029.032:007a"
+        ],
+        "because": [
+          "V.GEN.029.032:008a",
+          "V.GEN.029.032:017a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H7344G": [
+      {
+        "name": [
+          "V.GEN.026.022:011a"
+        ],
+        "because": [
+          "V.GEN.026.022:013a",
+          "V.GEN.026.022:019a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H8050G": [
+      {
+        "name": [
+          "V.1SA.001.020:011a"
+        ],
+        "because": [
+          "V.1SA.001.020:012a",
+          "V.1SA.001.020:014a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "bdb",
+          "kjv"
+        ]
+      }
+    ],
+    "H8095G": [
+      {
+        "name": [
+          "V.GEN.029.033:019a"
+        ],
+        "because": [
+          "V.GEN.029.033:006a",
+          "V.GEN.029.033:016a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "bdb",
+          "kjv"
+        ]
+      }
+    ],
+    "H8352": [
+      {
+        "name": [
+          "V.GEN.004.025:011a"
+        ],
+        "because": [
+          "V.GEN.004.025:012a",
+          "V.GEN.004.025:022a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "bdb",
+          "kjv"
+        ]
+      }
+    ],
+    "H836": [
+      {
+        "name": [
+          "V.GEN.030.013:010a"
+        ],
+        "because": [
+          "V.GEN.030.013:003a",
+          "V.GEN.030.013:006a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H8404": [
+      {
+        "name": [
+          "V.NUM.011.003:005a"
+        ],
+        "because": [
+          "V.NUM.011.003:006a",
+          "V.NUM.011.003:010a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "kjv"
+        ]
+      }
+    ],
+    "H85": [
+      {
+        "name": [
+          "V.GEN.017.005:009a"
+        ],
+        "because": [
+          "V.GEN.017.005:010a",
+          "V.GEN.017.005:014a"
+        ],
+        "kind": "renaming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H884": [
+      {
+        "name": [
+          "V.GEN.021.031:006a",
+          "V.GEN.021.031:007a"
+        ],
+        "because": [
+          "V.GEN.021.031:008a",
+          "V.GEN.021.031:011a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula"
+        ]
+      }
+    ],
+    "H894": [
+      {
+        "name": [
+          "V.GEN.011.009:005a"
+        ],
+        "because": [
+          "V.GEN.011.009:006a",
+          "V.GEN.011.009:012a"
+        ],
+        "kind": "naming",
+        "found_by": [
+          "formula",
+          "bdb"
+        ]
+      }
+    ]
+  }
+}

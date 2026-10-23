@@ -1,0 +1,1212 @@
+{
+  "schema": "bible-name-explanations-1",
+  "about": "Places where Scripture itself explains a name. IDs are Keyway Token Vault addresses (V.BOOK.CCC.VVV:slot). See docs/how-it-works.md.",
+  "entries": [
+    {
+      "id": "eve-gen-3-20",
+      "name_en": "Eve",
+      "strongs": "H2332",
+      "kind": "naming",
+      "name": [
+        "V.GEN.003.020:005a"
+      ],
+      "because": [
+        "V.GEN.003.020:006a",
+        "V.GEN.003.020:011a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "cain-gen-4-1",
+      "name_en": "Cain",
+      "strongs": "H7014B",
+      "kind": "naming",
+      "name": [
+        "V.GEN.004.001:009a"
+      ],
+      "because": [
+        "V.GEN.004.001:011a",
+        "V.GEN.004.001:014a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "seth-gen-4-25",
+      "name_en": "Seth",
+      "strongs": "H8352",
+      "kind": "naming",
+      "name": [
+        "V.GEN.004.025:011a"
+      ],
+      "because": [
+        "V.GEN.004.025:012a",
+        "V.GEN.004.025:022a"
+      ],
+      "found_by": [
+        "formula",
+        "bdb",
+        "kjv"
+      ]
+    },
+    {
+      "id": "noah-gen-5-29",
+      "name_en": "Noah",
+      "strongs": "H5146",
+      "kind": "naming",
+      "name": [
+        "V.GEN.005.029:004a"
+      ],
+      "because": [
+        "V.GEN.005.029:006a",
+        "V.GEN.005.029:015a"
+      ],
+      "found_by": [
+        "formula",
+        "bdb",
+        "kjv"
+      ]
+    },
+    {
+      "id": "peleg-gen-10-25",
+      "name_en": "Peleg",
+      "strongs": "H6389",
+      "kind": "naming",
+      "name": [
+        "V.GEN.010.025:007a"
+      ],
+      "because": [
+        "V.GEN.010.025:008a",
+        "V.GEN.010.025:011a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "babylon-babylonian-gen-11-9",
+      "name_en": "Babylon",
+      "strongs": "H894",
+      "kind": "naming",
+      "name": [
+        "V.GEN.011.009:005a"
+      ],
+      "because": [
+        "V.GEN.011.009:006a",
+        "V.GEN.011.009:012a"
+      ],
+      "found_by": [
+        "formula",
+        "bdb"
+      ]
+    },
+    {
+      "id": "ishmael-gen-16-11",
+      "name_en": "Ishmael",
+      "strongs": "H3458G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.016.011:011a"
+      ],
+      "because": [
+        "V.GEN.016.011:012a",
+        "V.GEN.016.011:016a"
+      ],
+      "found_by": [
+        "formula",
+        "bdb",
+        "kjv"
+      ]
+    },
+    {
+      "id": "abraham-gen-17-5",
+      "name_en": "Abraham",
+      "strongs": "H85",
+      "kind": "renaming",
+      "name": [
+        "V.GEN.017.005:009a"
+      ],
+      "because": [
+        "V.GEN.017.005:010a",
+        "V.GEN.017.005:014a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "isaac-gen-21-6",
+      "name_en": "Isaac",
+      "strongs": "H3327",
+      "kind": "naming",
+      "name": [
+        "V.GEN.021.003:012a"
+      ],
+      "because": [
+        "V.GEN.021.006:003a",
+        "V.GEN.021.006:010a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "beersheba-gen-21-31",
+      "name_en": "Beersheba",
+      "strongs": "H884",
+      "kind": "naming",
+      "name": [
+        "V.GEN.021.031:006a",
+        "V.GEN.021.031:007a"
+      ],
+      "because": [
+        "V.GEN.021.031:008a",
+        "V.GEN.021.031:011a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "esau-gen-25-25",
+      "name_en": "Esau",
+      "strongs": "H6215G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.025.025:009a"
+      ],
+      "because": [
+        "V.GEN.025.025:003a",
+        "V.GEN.025.025:006a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "jacob-gen-25-26",
+      "name_en": "Jacob",
+      "strongs": "H3290",
+      "kind": "naming",
+      "name": [
+        "V.GEN.025.026:011a"
+      ],
+      "because": [
+        "V.GEN.025.026:005a",
+        "V.GEN.025.026:008a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "edom-gen-25-30",
+      "name_en": "Edom",
+      "strongs": "H123H",
+      "kind": "naming",
+      "name": [
+        "V.GEN.025.030:018a"
+      ],
+      "because": [
+        "V.GEN.025.030:005a",
+        "V.GEN.025.030:013a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "esek-gen-26-20",
+      "name_en": "Esek",
+      "strongs": "H6230",
+      "kind": "naming",
+      "name": [
+        "V.GEN.026.020:013a"
+      ],
+      "because": [
+        "V.GEN.026.020:014a",
+        "V.GEN.026.020:016a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "rehoboth-gen-26-22",
+      "name_en": "Rehoboth",
+      "strongs": "H7344G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.026.022:011a"
+      ],
+      "because": [
+        "V.GEN.026.022:013a",
+        "V.GEN.026.022:019a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "reuben-gen-29-32",
+      "name_en": "Reuben",
+      "strongs": "H7205",
+      "kind": "naming",
+      "name": [
+        "V.GEN.029.032:007a"
+      ],
+      "because": [
+        "V.GEN.029.032:008a",
+        "V.GEN.029.032:017a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "simeon-gen-29-33",
+      "name_en": "Simeon",
+      "strongs": "H8095G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.029.033:019a"
+      ],
+      "because": [
+        "V.GEN.029.033:006a",
+        "V.GEN.029.033:016a"
+      ],
+      "found_by": [
+        "formula",
+        "bdb",
+        "kjv"
+      ]
+    },
+    {
+      "id": "levi-gen-29-34",
+      "name_en": "Levi",
+      "strongs": "H3878",
+      "kind": "naming",
+      "name": [
+        "V.GEN.029.034:020a"
+      ],
+      "because": [
+        "V.GEN.029.034:006a",
+        "V.GEN.029.034:015a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "judah-gen-29-35",
+      "name_en": "Judah",
+      "strongs": "H3063G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.029.035:014a"
+      ],
+      "because": [
+        "V.GEN.029.035:006a",
+        "V.GEN.029.035:009a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "dan-gen-30-6",
+      "name_en": "Dan",
+      "strongs": "H1835H",
+      "kind": "naming",
+      "name": [
+        "V.GEN.030.006:015a"
+      ],
+      "because": [
+        "V.GEN.030.006:003a",
+        "V.GEN.030.006:010a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "naphtali-gen-30-8",
+      "name_en": "Naphtali",
+      "strongs": "H5321G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.030.008:012a"
+      ],
+      "because": [
+        "V.GEN.030.008:003a",
+        "V.GEN.030.008:009a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "gad-gen-30-11",
+      "name_en": "Gad",
+      "strongs": "H1410G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.030.011:008a"
+      ],
+      "because": [
+        "V.GEN.030.011:003q",
+        "V.GEN.030.011:004q"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "asher-gen-30-13",
+      "name_en": "Asher",
+      "strongs": "H836",
+      "kind": "naming",
+      "name": [
+        "V.GEN.030.013:010a"
+      ],
+      "because": [
+        "V.GEN.030.013:003a",
+        "V.GEN.030.013:006a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "issachar-gen-30-18",
+      "name_en": "Issachar",
+      "strongs": "H3485G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.030.018:012a"
+      ],
+      "because": [
+        "V.GEN.030.018:003a",
+        "V.GEN.030.018:009a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "zebulun-gen-30-20",
+      "name_en": "Zebulun",
+      "strongs": "H2074",
+      "kind": "naming",
+      "name": [
+        "V.GEN.030.020:019a"
+      ],
+      "because": [
+        "V.GEN.030.020:003a",
+        "V.GEN.030.020:015a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "joseph-gen-30-23",
+      "name_en": "Joseph",
+      "strongs": "H3130G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.030.024:004a"
+      ],
+      "because": [
+        "V.GEN.030.023:005a",
+        "V.GEN.030.023:008a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "joseph-gen-30-24",
+      "name_en": "Joseph",
+      "strongs": "H3130G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.030.024:004a"
+      ],
+      "because": [
+        "V.GEN.030.024:006a",
+        "V.GEN.030.024:010a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "galeed-gen-31-48",
+      "name_en": "Galeed",
+      "strongs": "H1567",
+      "kind": "naming",
+      "name": [
+        "V.GEN.031.048:013a"
+      ],
+      "because": [
+        "V.GEN.031.048:003a",
+        "V.GEN.031.048:008a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "israel-israelite-gen-32-28",
+      "name_en": "Israel",
+      "strongs": "H3478",
+      "kind": "renaming",
+      "name": [
+        "V.GEN.032.028:009a"
+      ],
+      "because": [
+        "V.GEN.032.028:010a",
+        "V.GEN.032.028:016a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "penuel-gen-32-30",
+      "name_en": "Penuel",
+      "strongs": "H6439G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.032.030:005a"
+      ],
+      "because": [
+        "V.GEN.032.030:006a",
+        "V.GEN.032.030:013a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "el-bethel-gen-35-7",
+      "name_en": "El-bethel",
+      "strongs": "H416",
+      "kind": "naming",
+      "name": [
+        "V.GEN.035.007:006a",
+        "V.GEN.035.007:007a",
+        "V.GEN.035.007:008a"
+      ],
+      "because": [
+        "V.GEN.035.007:009a",
+        "V.GEN.035.007:016a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "perez-gen-38-29",
+      "name_en": "Perez",
+      "strongs": "H6557",
+      "kind": "naming",
+      "name": [
+        "V.GEN.038.029:014a"
+      ],
+      "because": [
+        "V.GEN.038.029:008a",
+        "V.GEN.038.029:011a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "manasseh-manassite-gen-41-51",
+      "name_en": "Manasseh",
+      "strongs": "H4519G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.041.051:006a"
+      ],
+      "because": [
+        "V.GEN.041.051:007a",
+        "V.GEN.041.051:016a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "ephraim-ephraimite-gen-41-52",
+      "name_en": "Ephraim",
+      "strongs": "H669G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.041.052:005a"
+      ],
+      "because": [
+        "V.GEN.041.052:006a",
+        "V.GEN.041.052:010a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "abel-mizraim-gen-50-11",
+      "name_en": "Abel-mizraim",
+      "strongs": "H67",
+      "kind": "naming",
+      "name": [
+        "V.GEN.050.011:018a",
+        "V.GEN.050.011:019a"
+      ],
+      "because": [
+        "V.GEN.050.011:010a",
+        "V.GEN.050.011:013a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "moses-exo-2-10",
+      "name_en": "Moses",
+      "strongs": "H4872",
+      "kind": "naming",
+      "name": [
+        "V.EXO.002.010:011a"
+      ],
+      "because": [
+        "V.EXO.002.010:013a",
+        "V.EXO.002.010:016a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "gershom-exo-2-22",
+      "name_en": "Gershom",
+      "strongs": "H1647G",
+      "kind": "naming",
+      "name": [
+        "V.EXO.002.022:006a"
+      ],
+      "because": [
+        "V.EXO.002.022:007a",
+        "V.EXO.002.022:012a"
+      ],
+      "found_by": [
+        "formula",
+        "bdb",
+        "kjv"
+      ]
+    },
+    {
+      "id": "marah-exo-15-23",
+      "name_en": "Marah",
+      "strongs": "H4785",
+      "kind": "naming",
+      "name": [
+        "V.EXO.015.023:015a"
+      ],
+      "because": [
+        "V.EXO.015.023:008a",
+        "V.EXO.015.023:010a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "massah-exo-17-7",
+      "name_en": "Massah",
+      "strongs": "H4532",
+      "kind": "naming",
+      "name": [
+        "V.EXO.017.007:004a"
+      ],
+      "because": [
+        "V.EXO.017.007:006a",
+        "V.EXO.017.007:019a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "meribah-exo-17-7",
+      "name_en": "Meribah",
+      "strongs": "H4809G",
+      "kind": "naming",
+      "name": [
+        "V.EXO.017.007:005a"
+      ],
+      "because": [
+        "V.EXO.017.007:006a",
+        "V.EXO.017.007:019a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "gershom-exo-18-3",
+      "name_en": "Gershom",
+      "strongs": "H1647G",
+      "kind": "naming",
+      "name": [
+        "V.EXO.018.003:007a"
+      ],
+      "because": [
+        "V.EXO.018.003:008a",
+        "V.EXO.018.003:013a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "eliezer-exo-18-4",
+      "name_en": "Eliezer",
+      "strongs": "H461H",
+      "kind": "naming",
+      "name": [
+        "V.EXO.018.004:003a"
+      ],
+      "because": [
+        "V.EXO.018.004:004a",
+        "V.EXO.018.004:010a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "taberah-num-11-3",
+      "name_en": "Taberah",
+      "strongs": "H8404",
+      "kind": "naming",
+      "name": [
+        "V.NUM.011.003:005a"
+      ],
+      "because": [
+        "V.NUM.011.003:006a",
+        "V.NUM.011.003:010a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "kibroth-hattaavah-num-11-34",
+      "name_en": "Kibroth-hattaavah",
+      "strongs": "H6914",
+      "kind": "naming",
+      "name": [
+        "V.NUM.011.034:006a",
+        "V.NUM.011.034:007a"
+      ],
+      "because": [
+        "V.NUM.011.034:008a",
+        "V.NUM.011.034:013a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "gilgal-jos-5-9",
+      "name_en": "Gilgal",
+      "strongs": "H1537G",
+      "kind": "naming",
+      "name": [
+        "V.JOS.005.009:015a"
+      ],
+      "because": [
+        "V.JOS.005.009:005a",
+        "V.JOS.005.009:010a"
+      ],
+      "found_by": [
+        "formula",
+        "bdb"
+      ]
+    },
+    {
+      "id": "mara-rut-1-20",
+      "name_en": "Mara",
+      "strongs": "H4755",
+      "kind": "renaming",
+      "name": [
+        "V.RUT.001.020:009a"
+      ],
+      "because": [
+        "V.RUT.001.020:010a",
+        "V.RUT.001.020:014a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "samuel-1sa-1-20",
+      "name_en": "Samuel",
+      "strongs": "H8050G",
+      "kind": "naming",
+      "name": [
+        "V.1SA.001.020:011a"
+      ],
+      "because": [
+        "V.1SA.001.020:012a",
+        "V.1SA.001.020:014a"
+      ],
+      "found_by": [
+        "formula",
+        "bdb",
+        "kjv"
+      ]
+    },
+    {
+      "id": "ichabod-1sa-4-21",
+      "name_en": "Ichabod",
+      "strongs": "H350",
+      "kind": "naming",
+      "name": [
+        "V.1SA.004.021:003a",
+        "V.1SA.004.021:004a"
+      ],
+      "because": [
+        "V.1SA.004.021:006a",
+        "V.1SA.004.021:008a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "ebenezer-1sa-7-12",
+      "name_en": "Ebenezer",
+      "strongs": "H72",
+      "kind": "naming",
+      "name": [
+        "V.1SA.007.012:013a",
+        "V.1SA.007.012:014a"
+      ],
+      "because": [
+        "V.1SA.007.012:016a",
+        "V.1SA.007.012:019a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "nabal-1sa-25-25",
+      "name_en": "Nabal",
+      "strongs": "H5037",
+      "kind": "gloss",
+      "name": [
+        "V.1SA.025.025:017a"
+      ],
+      "because": [
+        "V.1SA.025.025:013a",
+        "V.1SA.025.025:019a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "baal-perazim-2sa-5-20",
+      "name_en": "Baal-perazim",
+      "strongs": "H1188",
+      "kind": "naming",
+      "name": [
+        "V.2SA.005.020:022a",
+        "V.2SA.005.020:023a"
+      ],
+      "because": [
+        "V.2SA.005.020:009a",
+        "V.2SA.005.020:015a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "jedidiah-2sa-12-25",
+      "name_en": "Jedidiah",
+      "strongs": "H3041",
+      "kind": "naming",
+      "name": [
+        "V.2SA.012.025:008a"
+      ],
+      "because": [
+        "V.2SA.012.025:009a",
+        "V.2SA.012.025:010a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "peleg-1ch-1-19",
+      "name_en": "Peleg",
+      "strongs": "H6389",
+      "kind": "naming",
+      "name": [
+        "V.1CH.001.019:007a"
+      ],
+      "because": [
+        "V.1CH.001.019:008a",
+        "V.1CH.001.019:011a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "jabez-1ch-4-9",
+      "name_en": "Jabez",
+      "strongs": "H3258H",
+      "kind": "naming",
+      "name": [
+        "V.1CH.004.009:008a"
+      ],
+      "because": [
+        "V.1CH.004.009:010a",
+        "V.1CH.004.009:012a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "beriah-1ch-7-23",
+      "name_en": "Beriah",
+      "strongs": "H1283H",
+      "kind": "naming",
+      "name": [
+        "V.1CH.007.023:010a"
+      ],
+      "because": [
+        "V.1CH.007.023:011a",
+        "V.1CH.007.023:014a"
+      ],
+      "found_by": [
+        "formula",
+        "bdb",
+        "kjv"
+      ]
+    },
+    {
+      "id": "baal-perazim-1ch-14-11",
+      "name_en": "Baal-perazim",
+      "strongs": "H1188",
+      "kind": "naming",
+      "name": [
+        "V.1CH.014.011:022a",
+        "V.1CH.014.011:023a"
+      ],
+      "because": [
+        "V.1CH.014.011:009a",
+        "V.1CH.014.011:015a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "jezreel-hos-1-4",
+      "name_en": "Jezreel",
+      "strongs": "H3157K",
+      "kind": "naming",
+      "name": [
+        "V.HOS.001.004:006a"
+      ],
+      "because": [
+        "V.HOS.001.004:007a",
+        "V.HOS.001.004:020a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "lo-ruhamah-hos-1-6",
+      "name_en": "Lo-ruhamah",
+      "strongs": "H3819",
+      "kind": "naming",
+      "name": [
+        "V.HOS.001.006:009a",
+        "V.HOS.001.006:010a"
+      ],
+      "because": [
+        "V.HOS.001.006:011a",
+        "V.HOS.001.006:022a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "lo-ammi-hos-1-9",
+      "name_en": "Lo-ammi",
+      "strongs": "H3818",
+      "kind": "naming",
+      "name": [
+        "V.HOS.001.009:004a",
+        "V.HOS.001.009:005a"
+      ],
+      "because": [
+        "V.HOS.001.009:006a",
+        "V.HOS.001.009:013a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "jesus-mat-1-21",
+      "name_en": "Jesus",
+      "strongs": "G2424G",
+      "kind": "naming",
+      "name": [
+        "V.MAT.001.021:009a"
+      ],
+      "because": [
+        "V.MAT.001.021:010a",
+        "V.MAT.001.021:019a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "immanuel-mat-1-23",
+      "name_en": "Immanuel",
+      "strongs": "G1694",
+      "kind": "gloss",
+      "name": [
+        "V.MAT.001.023:015a"
+      ],
+      "because": [
+        "V.MAT.001.023:019a",
+        "V.MAT.001.023:022a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "peter-mat-16-18",
+      "name_en": "Peter",
+      "strongs": "G4074G",
+      "kind": "renaming",
+      "name": [
+        "V.MAT.016.018:008a"
+      ],
+      "because": [
+        "V.MAT.016.018:009a",
+        "V.MAT.016.018:013a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "golgotha-mat-27-33",
+      "name_en": "Golgotha",
+      "strongs": "G1115",
+      "kind": "gloss",
+      "name": [
+        "V.MAT.027.033:006a"
+      ],
+      "because": [
+        "V.MAT.027.033:009a",
+        "V.MAT.027.033:010a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "boanerges-mrk-3-17",
+      "name_en": "Boanerges",
+      "strongs": "G993",
+      "kind": "gloss",
+      "name": [
+        "V.MRK.003.017:016a"
+      ],
+      "because": [
+        "V.MRK.003.017:019a",
+        "V.MRK.003.017:020a"
+      ],
+      "found_by": [
+        "formula"
+      ]
+    },
+    {
+      "id": "messiah-jhn-1-41",
+      "name_en": "Messiah",
+      "strongs": "G3323",
+      "kind": "gloss",
+      "name": [
+        "V.JHN.001.041:014a"
+      ],
+      "because": [
+        "V.JHN.001.041:019a",
+        "V.JHN.001.041:019a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "cephas-jhn-1-42",
+      "name_en": "Cephas",
+      "strongs": "G2786",
+      "kind": "gloss",
+      "name": [
+        "V.JHN.001.042:021a"
+      ],
+      "because": [
+        "V.JHN.001.042:024a",
+        "V.JHN.001.042:024a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "siloam-jhn-9-7",
+      "name_en": "Siloam",
+      "strongs": "G4611",
+      "kind": "gloss",
+      "name": [
+        "V.JHN.009.007:010a"
+      ],
+      "because": [
+        "V.JHN.009.007:013a",
+        "V.JHN.009.007:013a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "thomas-jhn-11-16",
+      "name_en": "Thomas",
+      "strongs": "G2381",
+      "kind": "gloss",
+      "name": [
+        "V.JHN.011.016:003a"
+      ],
+      "because": [
+        "V.JHN.011.016:006a",
+        "V.JHN.011.016:006a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "akeldama-act-1-19",
+      "name_en": "Akeldama",
+      "strongs": "G184",
+      "kind": "gloss",
+      "name": [
+        "V.ACT.001.019:017a"
+      ],
+      "because": [
+        "V.ACT.001.019:020a",
+        "V.ACT.001.019:021a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "barnabas-act-4-36",
+      "name_en": "Barnabas",
+      "strongs": "G921G",
+      "kind": "gloss",
+      "name": [
+        "V.ACT.004.036:005a"
+      ],
+      "because": [
+        "V.ACT.004.036:012a",
+        "V.ACT.004.036:013a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "tabitha-act-9-36",
+      "name_en": "Tabitha",
+      "strongs": "G5000",
+      "kind": "gloss",
+      "name": [
+        "V.ACT.009.036:008a"
+      ],
+      "because": [
+        "V.ACT.009.036:012a",
+        "V.ACT.009.036:012a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    },
+    {
+      "id": "salem-heb-7-2",
+      "name_en": "Salem",
+      "strongs": "G4532",
+      "kind": "gloss",
+      "name": [
+        "V.HEB.007.002:017a"
+      ],
+      "because": [
+        "V.HEB.007.002:021a",
+        "V.HEB.007.002:021a"
+      ],
+      "found_by": [
+        "formula",
+        "kjv"
+      ]
+    }
+  ]
+}
