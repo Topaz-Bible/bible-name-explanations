@@ -32,13 +32,13 @@
   the number marks a variant or a word added later). `because` runs from the
   first aligned slot to the last. Empty where the KJV words aren't aligned
   yet.
-- **`strongs`**: the name's Strong's number, with STEP's disambiguating suffix
+- **`strongs`**: the name's Strong's number, with STEP's disambiguating suffix (STEPBible Data, CC BY 4.0)
   where it has one (`G2424G`).
 - **`kind`**: `naming`, `renaming` or `gloss`.
 - **`found_by`**: how the entry was found. `formula`: the original-language
   search below; `bdb` / `strongs` / `kjv`: a lexicon or the English agreed;
   `review`: settled by hand where the search held the case back.
-- **`bible_data`** (optional): the person or place in
+- **`bible_data`** (optional): a cross-reference to the person or place in
   [bible-data](https://github.com/BradyStephenson/bible-data) (CC BY 4.0), as
   `person:<person_id>` or `place:<place_id>`, or a list when the name belongs
   to two people (Boanerges). Its place list currently stops at Exodus 13, so
@@ -113,10 +113,13 @@ punctuation ("I have gotten a man") but not otherwise ("upon this rock", not
 
 ## Sources
 
-Seeded on 2026-10-23 from the Keyway names catalog
-([`sources/`](../sources)), with 17 entries settled by hand. Studies
-consulted for completeness: J. Fichtner, VT 6 (1956); B. O. Long, *The Problem
-of Etiological Narrative in the Old Testament* (1968); M. Garsiel, *Biblical
-Names* (1991); H. Marks, JBL 114 (1995), which counts "over eighty explicit
-etymologies" in the Hebrew Bible's narrative books. Only verse references are
-checked against them; none of their text is used.
+The list is our own work: seeded on 2026-10-23 from the original-language
+formula search over the Keyway Token Vault (a snapshot is in
+[`sources/`](../sources)), then completed and anchored to the KJV by hand. The
+README's "Built from" section lists what it rests on.
+
+Checked against, for missing passages only: J. Fichtner, VT 6 (1956); B. O.
+Long, *The Problem of Etiological Narrative in the Old Testament* (1968); M.
+Garsiel, *Biblical Names* (1991); H. Marks, JBL 114 (1995), which counts "over
+eighty explicit etymologies" in the Hebrew Bible's narrative books. None of
+their text or data is used.

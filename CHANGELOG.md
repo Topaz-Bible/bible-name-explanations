@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Credits tidied: a "Built from" list (KJV, Keyway Vault, STEPBible Data's
+  Strong's numbers, our own search and review); the studies are listed as
+  checked against, and bible-data as an optional cross-reference.
 - **Anchored to KJV words** (schema `bible-name-explanations-2`). Each entry's
   `kjv` block (book.chapter.verse:word) is the fixed anchor; the `vault` block
   is derived from it through the KJV's alignment on every build, so Vault IDs

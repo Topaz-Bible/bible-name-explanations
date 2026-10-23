@@ -18,7 +18,7 @@ covers the Bible's own explanations.
 |---:|---|
 | **110** | explanations: 79 namings, 8 renamings, 23 translated in the text ([the list](docs/list.md)) |
 | **13** | where the name and its reason sit in different verses |
-| **83** | linked to a person or place in [bible-data](https://github.com/BradyStephenson/bible-data) |
+| **83** | cross-referenced to a person or place in [bible-data](https://github.com/BradyStephenson/bible-data) |
 
 ## What's here
 
@@ -66,6 +66,21 @@ anchor, so if the KJV itself were ever re-issued, the build would stop.
 Know a passage we've missed, or a range that's wrong? [Open an issue](https://github.com/Topaz-Bible/bible-name-explanations/issues)
 with the verse. Candidates waiting to be checked are in
 [`data/candidates.json`](data/candidates.json).
+
+## Built from
+
+- **The King James Version** (Topaz's tokenized edition): the anchors and the quotes.
+- **The Keyway Token Vault** and the KJV's word alignment to it: the Hebrew and Greek words.
+- **Strong's numbers with STEP's disambiguating suffixes** (`H3130G`), from
+  [STEPBible Data](https://github.com/STEPBible/STEPBible-Data), Tyndale House,
+  Cambridge, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+- **Our own work**: the original-language search for naming formulas, the
+  entries settled by hand, and the KJV anchors.
+
+Checked against, for missing passages only (no text or data taken): Fichtner
+(1956), Long (1968), Garsiel (1991), Marks (1995). The `bible_data` field is an
+optional cross-reference to [bible-data](https://github.com/BradyStephenson/bible-data)
+(CC BY 4.0) for anyone joining the two; nothing in this list comes from it.
 
 ## Licence
 
