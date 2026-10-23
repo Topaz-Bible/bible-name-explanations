@@ -40,12 +40,6 @@
       "note": "'because there God appeared unto him'"
     },
     {
-      "name": "Allon-bachuth",
-      "named": "GEN.35.8",
-      "reason": "GEN.35.8",
-      "note": "the oak of weeping"
-    },
-    {
       "name": "Galeed",
       "named": "GEN.31.47",
       "reason": "GEN.31.48",
@@ -106,12 +100,6 @@
       "note": "'Why hast thou troubled us?'"
     },
     {
-      "name": "Ramath-lehi",
-      "named": "JDG.15.17",
-      "reason": "JDG.15.16",
-      "note": "the jawbone"
-    },
-    {
       "name": "En-hakkore",
       "named": "JDG.15.19",
       "reason": "JDG.15.19",
@@ -124,22 +112,10 @@
       "note": "'Let Baal plead against him'"
     },
     {
-      "name": "Mahaneh-dan",
-      "named": "JDG.18.12",
-      "reason": "JDG.18.12",
-      "note": "Dan's camp"
-    },
-    {
       "name": "Bochim",
       "named": "JDG.2.5",
       "reason": "JDG.2.4",
       "note": "the people wept"
-    },
-    {
-      "name": "Sela-hammahlekoth",
-      "named": "1SA.23.28",
-      "reason": "1SA.23.28",
-      "note": "the rock of divisions"
     },
     {
       "name": "Baal-perazim",
@@ -260,6 +236,62 @@
       "note": "a term glossed 'a gift'",
       "decision": "excluded",
       "why": "A term glossed, not a name."
+    },
+    {
+      "name": "Allon-bachuth",
+      "named": "GEN.35.8",
+      "reason": "GEN.35.8",
+      "note": "the event is told (Deborah buried under an oak); the weeping in the name is implied, not stated.",
+      "decision": "excluded",
+      "why": "A one-off name, explained in the verse that names it, and only implied: little value for readers (EJ, 2026-10-23)."
+    },
+    {
+      "name": "Ramath-lehi",
+      "named": "JDG.15.17",
+      "reason": "JDG.15.17",
+      "note": "the reason is the act (he threw away the jawbone), not a \"for\" clause.",
+      "decision": "excluded",
+      "why": "A one-off name, explained in the verse that names it, and only implied: little value for readers (EJ, 2026-10-23)."
+    },
+    {
+      "name": "Mahaneh-dan",
+      "named": "JDG.18.12",
+      "reason": "JDG.18.12",
+      "note": "the reason is the camp itself (\"pitched in Kirjath-jearim\").",
+      "decision": "excluded",
+      "why": "A one-off name, explained in the verse that names it, and only implied: little value for readers (EJ, 2026-10-23)."
+    },
+    {
+      "name": "Sela-hammahlekoth",
+      "named": "1SA.23.28",
+      "reason": "1SA.23.28",
+      "note": "the event is told (Saul turns back); the \"divisions\" or \"escape\" in the name is implied.",
+      "decision": "excluded",
+      "why": "A one-off name, explained in the verse that names it, and only implied: little value for readers (EJ, 2026-10-23)."
+    },
+    {
+      "name": "Cabul",
+      "named": "1KI.9.13",
+      "reason": "1KI.9.13",
+      "note": "Hiram's complaint is the reason; the meaning of Cabul (\"as nothing\"?) is implied, not stated.",
+      "decision": "excluded",
+      "why": "A one-off name, explained in the verse that names it, and only implied: little value for readers (EJ, 2026-10-23)."
+    },
+    {
+      "name": "Bamah",
+      "named": "EZK.20.29",
+      "reason": "EZK.20.29",
+      "note": "a wordplay on \"high place\" (bamah) and \"ye go\" (ba'im); the explanation is God's question.",
+      "decision": "excluded",
+      "why": "A one-off name, explained in the verse that names it, and only implied: little value for readers (EJ, 2026-10-23)."
+    },
+    {
+      "name": "Elymas",
+      "named": "ACT.13.8",
+      "reason": "ACT.13.8",
+      "note": "\"for so is his name by interpretation\" glosses Elymas as \"the sorcerer\"; commentators debate how the two names relate.",
+      "decision": "excluded",
+      "why": "A one-off name, explained in the verse that names it, and only implied: little value for readers (EJ, 2026-10-23)."
     }
   ]
 }

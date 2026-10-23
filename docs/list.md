@@ -1,8 +1,8 @@
 # The list
 
-117 places where Scripture explains a name. The reason is quoted from the KJV; the data records it as original-language token ranges, so it reads in any keyed translation.
+110 places where Scripture explains a name. The reason is quoted from the KJV; the data records it as original-language token ranges, so it reads in any keyed translation.
 
-## Names given with a reason (85)
+## Names given with a reason (79)
 
 | Name | | Where | The text says |
 |---|---|---|---|
@@ -43,7 +43,6 @@
 | Penuel | פְּנִיאֵ֑ל | Genesis 32:30 | for I have seen God face to face, and my life is preserved |
 | Succoth | סֻכּֽוֹת | Genesis 33:17 | and made booths for his cattle |
 | El-bethel | אֵ֖ל בֵּֽית אֵ֑ל | Genesis 35:7 | because there God appeared unto him, when he fled from the face of his brother |
-| Allon-bachuth | אַלּ֥וֹן בָּכֽוּת | Genesis 35:8 | But Deborah Rebekah’s nurse died, and she was buried beneath Beth–el under an oak |
 | Perez | פָּֽרֶץ | Genesis 38:29 | How hast thou broken forth? this breach |
 | Manasseh | מְנַשֶּׁ֑ה | Genesis 41:51 | For God, said he, hath made me forget all my toil, and all my father’s house |
 | Ephraim | אֶפְרָ֑יִם | Genesis 41:52 | For God hath caused me to be fruitful in the land of my affliction |
@@ -66,18 +65,14 @@
 | Hormah | חָרְמָֽה | Judges 1:17 | and utterly destroyed it |
 | Bochim | בֹּכִ֑ים | Judges 2:5; Judges 2:4 | that the people lifted up their voice, and wept |
 | Jehovah-shalom | יְהוָ֖ה שָׁל֑וֹם | Judges 6:24; Judges 6:23 | Peace be unto thee; fear not: thou shalt not die |
-| Ramath-lehi | רָ֥מַת לֶֽחִי | Judges 15:17 | that he cast away the jawbone out of his hand |
 | En-hakkore | עֵ֤ין הַקּוֹרֵא֙ | Judges 15:19; Judges 15:18 | and called on the Lord |
-| Mahaneh-dan | מַחֲנֵה דָ֗ן | Judges 18:12 | And they went up, and pitched in Kirjath–jearim, in Judah |
 | Samuel | שְׁמוּאֵ֔ל | 1 Samuel 1:20 | Because I have asked him of the Lord |
 | Ichabod | אִֽי כָבוֹד֙ | 1 Samuel 4:21 | The glory is departed from Israel |
 | Ebenezer | אֶ֣בֶן הָעָ֑זֶר | 1 Samuel 7:12 | Hitherto hath the Lord helped us |
-| Sela-hammahlekoth | סֶ֖לַע הַֽמַּחְלְקֽוֹת | 1 Samuel 23:28 | Wherefore Saul returned from pursuing after David, and went against the Philistines |
 | Baal-perazim | בַּ֥עַל פְּרָצִֽים | 2 Samuel 5:20 | The Lord hath broken forth upon mine enemies before me, as the breach of waters |
 | Perez-uzzah | פֶּ֣רֶץ עֻזָּ֔ה | 2 Samuel 6:8 | because the Lord had made a breach upon Uzzah |
 | Jedidiah | יְדִ֣ידְיָ֑הּ | 2 Samuel 12:25 | because of the Lord |
 | Absalom's place | יַ֣ד אַבְשָׁלֹ֔ם | 2 Samuel 18:18 | for he said, I have no son to keep my name in remembrance |
-| Cabul | כָּב֔וּל | 1 Kings 9:13 | What cities are these which thou hast given me, my brother |
 | Peleg | פֶּ֗לֶג | 1 Chronicles 1:19 | because in his days the earth was divided |
 | Jabez | יַעְבֵּץ֙ | 1 Chronicles 4:9 | Because I bare him with sorrow |
 | Beriah | בְּרִיעָ֔ה | 1 Chronicles 7:23 | because it went evil with his house |
@@ -86,7 +81,6 @@
 | Solomon | שְׁלֹמֹה֙ | 1 Chronicles 22:9 | and I will give peace and quietness unto Israel in his days |
 | Berachah | עֵ֥מֶק בְּרָכָ֖ה | 2 Chronicles 20:26 | for there they blessed the Lord |
 | Maher-shalal-hash-baz | מַהֵ֥ר שָׁלָ֖ל חָ֥שׁ בַּֽז | Isaiah 8:3; Isaiah 8:4 | For before the child shall have knowledge to cry, My father, and my mother, the riches of Damascus and the spoil of Samaria shall be taken away before the king of Assyria |
-| Bamah | בָּמָ֔ה | Ezekiel 20:29 | What is the high place whereunto ye go |
 | Jezreel | יִזְרְעֶ֑אל | Hosea 1:4 | for yet a little while, and I will avenge the blood of Jezreel upon the house of Jehu, and will cause to cease the kingdom of the house of Israel |
 | Lo-ruhamah | לֹ֣א רֻחָ֑מָה | Hosea 1:6 | for I will no more have mercy upon the house of Israel |
 | Lo-ammi | לֹ֣א עַמִּ֑י | Hosea 1:9 | for ye are not my people, and I will not be your God |
@@ -105,7 +99,7 @@
 | Magor-missabib | מָג֥וֹר מִסָּבִֽיב | Jeremiah 20:3; Jeremiah 20:4 | Behold, I will make thee a terror to thyself, and to all thy friends |
 | Peter | πετρος | Matthew 16:18 | and upon this rock |
 
-## Names translated in the text (24)
+## Names translated in the text (23)
 
 | Name | | Where | The text says |
 |---|---|---|---|
@@ -128,7 +122,6 @@
 | Akeldama | ακελδαμαχ | Acts 1:19 | The field of blood |
 | Barnabas | βαρναβας | Acts 4:36 | The son of consolation |
 | Tabitha | ταβιθα | Acts 9:36 | Dorcas |
-| Elymas | ελυμας | Acts 13:8 | sorcerer |
 | Abba | αββα | Romans 8:15 | Father |
 | Abba | αββα | Galatians 4:6 | Father |
 | Melchizedek | μελχισεδεκ | Hebrews 7:1; Hebrews 7:2 | interpretation King of righteousness |

@@ -1,18 +1,11 @@
 # Review
 
-All 117 entries, in Bible order, for proofreading. For each, check that the quoted reason is the reason the text gives for that name, and that it starts and stops in the right place.
+All 110 entries, in Bible order, for proofreading. For each, check that the quoted reason is the reason the text gives for that name, and that it starts and stops in the right place.
 
 Judgement calls are marked **Proofread** and listed first. Entries found by `review` were settled by hand; the rest came from the original-language formula search.
 
-## Judgement calls (7)
+## Judgement calls (0)
 
-- **Allon-bachuth**, Genesis 35:8: the event is told (Deborah buried under an oak); the weeping in the name is implied, not stated.
-- **Ramath-lehi**, Judges 15:17: the reason is the act (he threw away the jawbone), not a "for" clause.
-- **Mahaneh-dan**, Judges 18:12: the reason is the camp itself ("pitched in Kirjath-jearim").
-- **Sela-hammahlekoth**, 1 Samuel 23:28: the event is told (Saul turns back); the "divisions" or "escape" in the name is implied.
-- **Cabul**, 1 Kings 9:13: Hiram's complaint is the reason; the meaning of Cabul ("as nothing"?) is implied, not stated.
-- **Bamah**, Ezekiel 20:29: a wordplay on "high place" (bamah) and "ye go" (ba'im); the explanation is God's question.
-- **Elymas**, Acts 13:8: "for so is his name by interpretation" glosses Elymas as "the sorcerer"; commentators debate how the two names relate.
 
 ## Every entry
 
@@ -276,14 +269,6 @@ Genesis 35:7 · named · found by formula · bible-data `place:El-bethel_1`
 
 > because there God appeared unto him, when he fled from the face of his brother
 
-### Allon-bachuth · אַלּ֥וֹן בָּכֽוּת
-
-Genesis 35:8 · named · found by review · bible-data `place:Allon-bacuth_1`
-
-> But Deborah Rebekah’s nurse died, and she was buried beneath Beth–el under an oak
-
-*Proofread: the event is told (Deborah buried under an oak); the weeping in the name is implied, not stated.*
-
 ### Perez · פָּֽרֶץ
 
 Genesis 38:29 · named · found by formula · bible-data `person:Perez_1`
@@ -436,14 +421,6 @@ Judges 6:32 · renamed · found by review · bible-data `person:Gideon_1`
 
 *Gideon's new name.*
 
-### Ramath-lehi · רָ֥מַת לֶֽחִי
-
-Judges 15:17 · named · found by review
-
-> that he cast away the jawbone out of his hand
-
-*Proofread: the reason is the act (he threw away the jawbone), not a "for" clause.*
-
 ### En-hakkore · עֵ֤ין הַקּוֹרֵא֙
 
 named Judges 15:19, explained Judges 15:18 · named · found by review
@@ -451,14 +428,6 @@ named Judges 15:19, explained Judges 15:18 · named · found by review
 > and called on the Lord
 
 *"The spring of him that called": the calling is in the verse before.*
-
-### Mahaneh-dan · מַחֲנֵה דָ֗ן
-
-Judges 18:12 · named · found by review
-
-> And they went up, and pitched in Kirjath–jearim, in Judah
-
-*Proofread: the reason is the camp itself ("pitched in Kirjath-jearim").*
 
 ### Mara · מָרָ֔א
 
@@ -483,14 +452,6 @@ Ruth 1:20 · renamed · found by review · bible-data `person:Naomi_1`
 1 Samuel 7:12 · named · found by review
 
 > Hitherto hath the Lord helped us
-
-### Sela-hammahlekoth · סֶ֖לַע הַֽמַּחְלְקֽוֹת
-
-1 Samuel 23:28 · named · found by review
-
-> Wherefore Saul returned from pursuing after David, and went against the Philistines
-
-*Proofread: the event is told (Saul turns back); the "divisions" or "escape" in the name is implied.*
 
 ### Nabal · נָבָ֣ל
 
@@ -523,14 +484,6 @@ Ruth 1:20 · renamed · found by review · bible-data `person:Naomi_1`
 > for he said, I have no son to keep my name in remembrance
 
 *A monument's name ("Absalom's place", literally "hand").*
-
-### Cabul · כָּב֔וּל
-
-1 Kings 9:13 · named · found by review
-
-> What cities are these which thou hast given me, my brother
-
-*Proofread: Hiram's complaint is the reason; the meaning of Cabul ("as nothing"?) is implied, not stated.*
 
 ### Peleg · פֶּ֗לֶג
 
@@ -609,14 +562,6 @@ named Jeremiah 20:3, explained Jeremiah 20:4 · renamed · found by review · bi
 > Behold, I will make thee a terror to thyself, and to all thy friends
 
 *Pashur's new name; the reason follows in 20:4.*
-
-### Bamah · בָּמָ֔ה
-
-Ezekiel 20:29 · named · found by review
-
-> What is the high place whereunto ye go
-
-*Proofread: a wordplay on "high place" (bamah) and "ye go" (ba'im); the explanation is God's question.*
 
 ### Jezreel · יִזְרְעֶ֑אל
 
@@ -761,14 +706,6 @@ Acts 4:36 · translated in the text · found by formula kjv · bible-data `perso
 Acts 9:36 · translated in the text · found by formula kjv · bible-data `person:Tabitha_1`
 
 > Dorcas
-
-### Elymas · ελυμας
-
-Acts 13:8 · translated in the text · found by review
-
-> sorcerer
-
-*Proofread: "for so is his name by interpretation" glosses Elymas as "the sorcerer"; commentators debate how the two names relate.*
 
 ### Abba · αββα
 

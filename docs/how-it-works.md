@@ -69,7 +69,15 @@ Rabbi, Rabboni, Abba) are included. Excluded candidates and why are listed in
 `tools/build.py` refuses to write the list unless every token ID exists in
 the Vault, at least one name token carries the entry's Strong's number (a
 name written as two words, like Jehovah-jireh, may be tagged on either), and
-every reason runs forward.
+every reason runs forward. It also compares every token ID with the word it
+pointed at when the entry was made (`data/anchors.json`) and stops, naming the
+entries, if any has changed. Re-check those entries, then build with
+`--accept`.
+
+What counts: names that recur, where the explanation helps a reader across
+many verses, are the point. One-off names explained in the same verse with
+the meaning only implied are left out (Allon-bachuth, Elymas and others; see
+[coverage](coverage.md)).
 
 ```sh
 python3 tools/build.py --vault ../keyway-data/vault --kjv ../topaz-bible/assets/packages/eng.bible.kjv.zip

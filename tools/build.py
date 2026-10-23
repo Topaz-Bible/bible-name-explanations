@@ -9,8 +9,12 @@ This script reads the Vault (for the original words) and a Topaz KJV package
   data/explanations.csv  one row per entry, with references and text
   docs/list.md           the list for readers
 
-It also checks every entry: IDs exist in the Vault, the name token carries the
-entry's Strong's number, reason endpoints are in order.
+It also checks every entry: IDs exist in the Vault, a name token carries the
+entry's Strong's number, reason endpoints are in order, and every token ID
+still points at the word it did when the entry was made (data/anchors.json).
+The Vault grows as witness readings add slots; when a referenced word changes,
+the build stops and names the entries to re-check. After checking them, run
+again with --accept to record the new words.
 
     python3 tools/build.py --vault ../keyway-data/vault \
         --kjv ../topaz-bible/assets/packages/eng.bible.kjv.zip
@@ -190,6 +194,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--vault', required=True)
     ap.add_argument('--kjv', required=True)
+    ap.add_argument('--accept', action='store_true',
+                    help='record the current Vault words as the anchors (after re-checking drifted entries)')
     args = ap.parse_args()
     vault, kjv = Vault(args.vault), KJV(args.kjv)
     data = json.loads((HERE / 'data/explanations.json').read_text())
@@ -226,9 +232,28 @@ def main():
             'note': e.get('note', ''),
             'bible_data': ' '.join(e['bible_data']) if isinstance(e.get('bible_data'), list) else e.get('bible_data', ''),
         })
+    # Anchors: the word behind every token ID the list uses.
+    anchor_path = HERE / 'data/anchors.json'
+    anchors = json.loads(anchor_path.read_text()) if anchor_path.exists() else {}
+    current = {}
+    for e in data['entries']:
+        for vid in e['name'] + e['because']:
+            try:
+                t = vault.token(vid)
+            except (ValueError, FileNotFoundError):
+                continue
+            current[vid] = {'t': t['t'], 's': t.get('s', '')}
+    drifted = sorted({e['id'] for e in data['entries'] for vid in e['name'] + e['because']
+                      if vid in anchors and vid in current and anchors[vid] != current[vid]})
+    if drifted and not args.accept:
+        problems.append('These entries point at Vault words that changed; re-check them, then run with --accept:\n  '
+                        + '\n  '.join(drifted))
     if problems:
         print('\n'.join(problems), file=sys.stderr)
         sys.exit(1)
+    new = sorted(set(current) - set(anchors))
+    if args.accept or new:
+        anchor_path.write_text(json.dumps(dict(sorted(current.items())), ensure_ascii=False, indent=1) + '\n')
 
     with open(HERE / 'data/explanations.csv', 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]))

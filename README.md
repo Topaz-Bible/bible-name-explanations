@@ -16,9 +16,9 @@ covers the Bible's own explanations.
 
 | | |
 |---:|---|
-| **117** | explanations: 85 namings, 8 renamings, 24 translated in the text ([the list](docs/list.md)) |
+| **110** | explanations: 79 namings, 8 renamings, 23 translated in the text ([the list](docs/list.md)) |
 | **13** | where the name and its reason sit in different verses |
-| **84** | linked to a person or place in [bible-data](https://github.com/BradyStephenson/bible-data) |
+| **83** | linked to a person or place in [bible-data](https://github.com/BradyStephenson/bible-data) |
 
 ## What's here
 
@@ -45,6 +45,14 @@ generated from that alignment.
 - **naming**: a name given with its reason (Reuben, Moses, Ichabod, Jesus in Matthew 1:21)
 - **renaming**: a name changed, with a reason (Abraham, Israel, Mara, Peter)
 - **gloss**: the text translates or reads a name (Emmanuel, Cephas, Tabitha, Golgotha, Siloam; Nabal's "as his name is, so is he"). A few titles glossed in the text are included too: Messias, Rabbi, Rabboni, Abba.
+
+## Keeping up with the Vault
+
+The Token Vault grows: as manuscript readings are added, new slots appear and
+words can move. Every token ID this list uses is recorded with the word it
+points at ([`data/anchors.json`](data/anchors.json)). When the Vault changes,
+`tools/build.py` compares, and stops with the entries to re-check if any word
+moved. After re-checking, `--accept` records the new words. Expect this often.
 
 ## Corrections and additions
 

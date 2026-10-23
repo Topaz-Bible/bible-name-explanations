@@ -1,6 +1,6 @@
 # Coverage
 
-42 candidate passages checked against the list: 38 covered, 4 excluded, 0 to settle.
+45 candidate passages checked against the list: 34 covered, 11 excluded, 0 to settle.
 Candidates live in `data/candidates.json`; run `python3 tools/coverage.py` after adding entries.
 
 ## To settle
@@ -16,6 +16,13 @@ Candidates live in `data/candidates.json`; run `python3 tools/coverage.py` after
 | Bethesda | JHN.5.2 | Named, not explained. |
 | Talitha cumi | MRK.5.41 | Words glossed, not a name. |
 | Corban | MRK.7.11 | A term glossed, not a name. |
+| Allon-bachuth | GEN.35.8 | A one-off name, explained in the verse that names it, and only implied: little value for readers (EJ, 2026-10-23). |
+| Ramath-lehi | JDG.15.17 | A one-off name, explained in the verse that names it, and only implied: little value for readers (EJ, 2026-10-23). |
+| Mahaneh-dan | JDG.18.12 | A one-off name, explained in the verse that names it, and only implied: little value for readers (EJ, 2026-10-23). |
+| Sela-hammahlekoth | 1SA.23.28 | A one-off name, explained in the verse that names it, and only implied: little value for readers (EJ, 2026-10-23). |
+| Cabul | 1KI.9.13 | A one-off name, explained in the verse that names it, and only implied: little value for readers (EJ, 2026-10-23). |
+| Bamah | EZK.20.29 | A one-off name, explained in the verse that names it, and only implied: little value for readers (EJ, 2026-10-23). |
+| Elymas | ACT.13.8 | A one-off name, explained in the verse that names it, and only implied: little value for readers (EJ, 2026-10-23). |
 
 ## Covered
 
@@ -26,7 +33,6 @@ Candidates live in `data/candidates.json`; run `python3 tools/coverage.py` after
 | Mahanaim | GEN.32.2 | GEN.32.2 |
 | Succoth | GEN.33.17 | GEN.33.17 |
 | El-beth-el | GEN.35.7 | GEN.35.7 |
-| Allon-bachuth | GEN.35.8 | GEN.35.8 |
 | Galeed | GEN.31.47 | GEN.31.48 |
 | Mizpah | GEN.31.49 | GEN.31.49 |
 | Abel-mizraim | GEN.50.11 | GEN.50.11 |
@@ -37,12 +43,9 @@ Candidates live in `data/candidates.json`; run `python3 tools/coverage.py` after
 | Hormah | NUM.21.3 | NUM.21.3 |
 | Meribah | NUM.20.13 | NUM.20.13 |
 | Achor | JOS.7.26 | JOS.7.25 |
-| Ramath-lehi | JDG.15.17 | JDG.15.16 |
 | En-hakkore | JDG.15.19 | JDG.15.19 |
 | Jerubbaal | JDG.6.32 | JDG.6.32 |
-| Mahaneh-dan | JDG.18.12 | JDG.18.12 |
 | Bochim | JDG.2.5 | JDG.2.4 |
-| Sela-hammahlekoth | 1SA.23.28 | 1SA.23.28 |
 | Baal-perazim | 2SA.5.20 | 2SA.5.20 |
 | Perez-uzzah | 2SA.6.8 | 2SA.6.8 |
 | Absalom's place | 2SA.18.18 | 2SA.18.18 |

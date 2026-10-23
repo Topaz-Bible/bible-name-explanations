@@ -718,25 +718,6 @@
       "bible_data": "place:El-bethel_1"
     },
     {
-      "id": "allon-bachuth-gen-35-8",
-      "name_en": "Allon-bachuth",
-      "strongs": "H439",
-      "kind": "naming",
-      "name": [
-        "V.GEN.035.008:013a",
-        "V.GEN.035.008:014a"
-      ],
-      "because": [
-        "V.GEN.035.008:001a",
-        "V.GEN.035.008:010a"
-      ],
-      "found_by": [
-        "review"
-      ],
-      "note": "Proofread: the event is told (Deborah buried under an oak); the weeping in the name is implied, not stated.",
-      "bible_data": "place:Allon-bacuth_1"
-    },
-    {
       "id": "perez-gen-38-29",
       "name_en": "Perez",
       "strongs": "H6557",
@@ -1137,24 +1118,6 @@
       "bible_data": "person:Gideon_1"
     },
     {
-      "id": "ramath-lehi-jdg-15-17",
-      "name_en": "Ramath-lehi",
-      "strongs": "H7437",
-      "kind": "naming",
-      "name": [
-        "V.JDG.015.017:010a",
-        "V.JDG.015.017:011a"
-      ],
-      "because": [
-        "V.JDG.015.017:004a",
-        "V.JDG.015.017:006a"
-      ],
-      "found_by": [
-        "review"
-      ],
-      "note": "Proofread: the reason is the act (he threw away the jawbone), not a \"for\" clause."
-    },
-    {
       "id": "en-hakkore-jdg-15-18",
       "name_en": "En-hakkore",
       "strongs": "H5875",
@@ -1171,24 +1134,6 @@
         "review"
       ],
       "note": "\"The spring of him that called\": the calling is in the verse before."
-    },
-    {
-      "id": "mahaneh-dan-jdg-18-12",
-      "name_en": "Mahaneh-dan",
-      "strongs": "H4265",
-      "kind": "naming",
-      "name": [
-        "V.JDG.018.012:011a",
-        "V.JDG.018.012:012a"
-      ],
-      "because": [
-        "V.JDG.018.012:001a",
-        "V.JDG.018.012:005a"
-      ],
-      "found_by": [
-        "review"
-      ],
-      "note": "Proofread: the reason is the camp itself (\"pitched in Kirjath-jearim\")."
     },
     {
       "id": "mara-rut-1-20",
@@ -1260,24 +1205,6 @@
       "found_by": [
         "review"
       ]
-    },
-    {
-      "id": "sela-hammahlekoth-1sa-23-28",
-      "name_en": "Sela-hammahlekoth",
-      "strongs": "H5555",
-      "kind": "naming",
-      "name": [
-        "V.1SA.023.028:014a",
-        "V.1SA.023.028:015a"
-      ],
-      "because": [
-        "V.1SA.023.028:001a",
-        "V.1SA.023.028:008a"
-      ],
-      "found_by": [
-        "review"
-      ],
-      "note": "Proofread: the event is told (Saul turns back); the \"divisions\" or \"escape\" in the name is implied."
     },
     {
       "id": "nabal-1sa-25-25",
@@ -1365,23 +1292,6 @@
         "review"
       ],
       "note": "A monument's name (\"Absalom's place\", literally \"hand\")."
-    },
-    {
-      "id": "cabul-1ki-9-13",
-      "name_en": "Cabul",
-      "strongs": "H3521H",
-      "kind": "naming",
-      "name": [
-        "V.1KI.009.013:012a"
-      ],
-      "because": [
-        "V.1KI.009.013:003a",
-        "V.1KI.009.013:008a"
-      ],
-      "found_by": [
-        "review"
-      ],
-      "note": "Proofread: Hiram's complaint is the reason; the meaning of Cabul (\"as nothing\"?) is implied, not stated."
     },
     {
       "id": "peleg-1ch-1-19",
@@ -1584,23 +1494,6 @@
       ],
       "note": "Pashur's new name; the reason follows in 20:4.",
       "bible_data": "person:Pashhur_2"
-    },
-    {
-      "id": "bamah-ezk-20-29",
-      "name_en": "Bamah",
-      "strongs": "H1117",
-      "kind": "naming",
-      "name": [
-        "V.EZK.020.029:011a"
-      ],
-      "because": [
-        "V.EZK.020.029:003a",
-        "V.EZK.020.029:008a"
-      ],
-      "found_by": [
-        "review"
-      ],
-      "note": "Proofread: a wordplay on \"high place\" (bamah) and \"ye go\" (ba'im); the explanation is God's question."
     },
     {
       "id": "jezreel-hos-1-4",
@@ -1986,23 +1879,6 @@
         "kjv"
       ],
       "bible_data": "person:Tabitha_1"
-    },
-    {
-      "id": "elymas-act-13-8",
-      "name_en": "Elymas",
-      "strongs": "G1681",
-      "kind": "gloss",
-      "name": [
-        "V.ACT.013.008:004a"
-      ],
-      "because": [
-        "V.ACT.013.008:006a",
-        "V.ACT.013.008:006a"
-      ],
-      "found_by": [
-        "review"
-      ],
-      "note": "Proofread: \"for so is his name by interpretation\" glosses Elymas as \"the sorcerer\"; commentators debate how the two names relate."
     },
     {
       "id": "abba-rom-8-15",
