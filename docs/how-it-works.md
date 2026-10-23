@@ -60,8 +60,9 @@ later one, and the build reads every verse between.
 
 Not counted: "call upon the name of the LORD", naming without a reason
 ("called his name Obed"), Adam naming the animals, and glossed words that
-aren't names ("Talitha cumi", "Corban"). Titles glossed in the text (Rabboni,
-Abba) are candidates; see [coverage](coverage.md).
+aren't names ("Talitha cumi", "Corban"). Titles glossed in the text (Messias,
+Rabbi, Rabboni, Abba) are included. Excluded candidates and why are listed in
+[coverage](coverage.md).
 
 ## Checks
 
@@ -70,6 +71,11 @@ the Vault, at least one name token carries the entry's Strong's number (a
 name written as two words, like Jehovah-jireh, may be tagged on either), and
 every reason runs forward.
 
+```sh
+python3 tools/build.py --vault ../keyway-data/vault --kjv ../topaz-bible/assets/packages/eng.bible.kjv.zip
+python3 tools/coverage.py
+```
+
 ## KJV quotes
 
 The quotes are generated from the KJV's word alignment, so they're only as
@@ -77,11 +83,6 @@ complete as it is. Untagged words at a quote's edge are taken in when they run
 to punctuation ("I have gotten a man"), but not otherwise ("upon this rock",
 not "rock I will"). Where alignment gaps trim a quote, the entry's note says
 so (Simeon, Perez, Sitnah, Beulah, Gad).
-
-```sh
-python3 tools/build.py --vault ../keyway-data/vault --kjv ../topaz-bible/assets/packages/eng.bible.kjv.zip
-python3 tools/coverage.py
-```
 
 ## Sources
 
