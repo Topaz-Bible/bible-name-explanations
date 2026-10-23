@@ -59,6 +59,8 @@ def parse(vid):
 
 def slot_rank(slot):
     m = re.match(r'(\d+)([a-z]*)', slot)
+    if not m:
+        return -1
     return int(m.group(1)) * 100 + (ord(m.group(2)[0]) - 96 if m.group(2) else 0)
 
 
@@ -98,10 +100,20 @@ class KJV:
                         return v['tokens']
         return []
 
-    def words(self, first, last):
-        """The KJV words rendering the Vault slots first..last (one verse)."""
-        book, chapter, verse, lo = parse(first)
-        _, _, _, hi = parse(last)
+    def words(self, first, last, keep_end=False):
+        """The KJV words rendering the Vault slots first..last. A reason that
+        runs on across verses is read verse by verse and joined."""
+        book, c1, v1, lo = parse(first)
+        _, c2, v2, hi = parse(last)
+        if (c1, v1) != (c2, v2):
+            parts = []
+            for c, v, a, z in self.verses_between(book, c1, v1, c2, v2):
+                start = first if (c, v) == (c1, v1) else f'V.{book}.{c:03d}.{v:03d}:000a'
+                end = last if (c, v) == (c2, v2) else f'V.{book}.{c:03d}.{v:03d}:999z'
+                parts.append(self.words(start, end, keep_end=(c, v) != (c2, v2)))
+            return ' '.join(p for p in parts if p)
+        verse = v1
+        chapter = c1
         tokens = self.verse(book, chapter, verse)
         lo, hi = slot_rank(lo), slot_rank(hi)
         hits = [t['n'] for t in tokens
@@ -126,7 +138,20 @@ class KJV:
         if by_n[n].get('a') or n + 1 not in by_n:
             last = n
         span = [t for t in tokens if first <= t['n'] <= last]
-        return ' '.join(t['t'] + (t.get('a', '') if i < len(span) - 1 else '') for i, t in enumerate(span))
+        return ' '.join(t['t'] + (t.get('a', '') if i < len(span) - 1 or keep_end else '') for i, t in enumerate(span))
+
+
+def _between(self, book, c1, v1, c2, v2):
+    self.verse(book, c1, v1)
+    out = []
+    for c in self.books[book]['chapters']:
+        for v in c['verses']:
+            if (c1, v1) <= (c['chapter'], v['verse']) <= (c2, v2):
+                out.append((c['chapter'], v['verse'], None, None))
+    return out
+
+
+KJV.verses_between = _between
 
 
 def reference(vid):
@@ -136,6 +161,29 @@ def reference(vid):
 
 def base(code):
     return re.sub(r'^([GH])0*(\d+).*$', r'\1\2', code or '')
+
+
+def write_review(rows):
+    """docs/review.md: every entry as a short block, for proofreading."""
+    kinds = {'naming': 'named', 'renaming': 'renamed', 'gloss': 'translated in the text'}
+    flagged = [r for r in rows if r['note'].startswith('Proofread')]
+    out = ['# Review', '',
+           f'All {len(rows)} entries, in Bible order, for proofreading. For each, check that the quoted reason '
+           'is the reason the text gives for that name, and that it starts and stops in the right place.', '',
+           'Judgement calls are marked **Proofread** and listed first. Entries found by `review` were settled by hand; '
+           'the rest came from the original-language formula search.', '',
+           f'## Judgement calls ({len(flagged)})', '']
+    for r in flagged:
+        out.append(f"- **{r['name']}**, {r['explained_at']}: {r['note'][len('Proofread: '):]}")
+    out += ['', '## Every entry', '']
+    for r in rows:
+        where = r['explained_at'] if r['named_at'] == r['explained_at'] else f"named {r['named_at']}, explained {r['explained_at']}"
+        out += [f"### {r['name']} · {r['original']}", '',
+                f"{where} · {kinds[r['kind']]} · found by {r['found_by']}" + (f" · bible-data `{r['bible_data']}`" if r['bible_data'] else ''), '',
+                f"> {r['kjv_reason'] or '(no KJV words aligned to the reason yet)'}", '']
+        if r['note']:
+            out += [f"*{r['note']}*", '']
+    (HERE / 'docs/review.md').write_text('\n'.join(out))
 
 
 def main():
@@ -149,14 +197,15 @@ def main():
     for e in data['entries']:
         try:
             names = [vault.token(v) for v in e['name']]
-            for v, t in zip(e['name'], names):
-                if base(t.get('s')) != base(e['strongs']):
-                    problems.append(f"{e['id']}: {v} is {t.get('s')}, not {e['strongs']}")
+            # A name written as several words (Jehovah-jireh: יְהוָה יִרְאֶה) needs
+            # only one of them to carry the entry's number.
+            if not any(base(t.get('s')) == base(e['strongs']) or base(e['strongs']) in map(base, t.get('sa') or [])
+                       for t in names):
+                problems.append(f"{e['id']}: no name token is {e['strongs']}")
             first, last = e['because']
             vault.token(first), vault.token(last)
-            if parse(first)[:3] != parse(last)[:3]:
-                problems.append(f"{e['id']}: the reason runs across verses (not yet supported)")
-            elif slot_rank(parse(first)[3]) > slot_rank(parse(last)[3]):
+            a, b = parse(first), parse(last)
+            if a[0] != b[0] or (a[1], a[2], slot_rank(a[3])) > (b[1], b[2], slot_rank(b[3])):
                 problems.append(f"{e['id']}: reason endpoints out of order")
         except (ValueError, FileNotFoundError) as err:
             problems.append(f"{e['id']}: {err}")
@@ -174,6 +223,8 @@ def main():
             'reason_from': first,
             'reason_to': last,
             'found_by': ' '.join(e['found_by']),
+            'note': e.get('note', ''),
+            'bible_data': ' '.join(e['bible_data']) if isinstance(e.get('bible_data'), list) else e.get('bible_data', ''),
         })
     if problems:
         print('\n'.join(problems), file=sys.stderr)
@@ -199,6 +250,7 @@ def main():
             out.append(f"| {r['name']} | {r['original']} | {where} | {r['kjv_reason'] or '—'} |")
         out.append('')
     (HERE / 'docs/list.md').write_text('\n'.join(out))
+    write_review(rows)
     print(f'{len(rows)} entries checked and written')
 
 

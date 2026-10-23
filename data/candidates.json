@@ -1,47 +1,265 @@
 {
   "about": "Passages still to check: where Scripture may explain a name but the list has no entry yet. Each gives the naming verse, the verse with the reason (often the one before or after), and a note. tools/coverage.py marks which are already in data/explanations.json.",
   "candidates": [
-    {"name": "Beer-lahai-roi", "named": "GEN.16.14", "reason": "GEN.16.13", "note": "the well named after Hagar's words, 'Thou God seest me'"},
-    {"name": "Jehovah-jireh", "named": "GEN.22.14", "reason": "GEN.22.14", "note": "'In the mount of the LORD it shall be seen'"},
-    {"name": "Isaac", "named": "GEN.17.19", "reason": "GEN.17.17", "note": "Abraham laughed (a play, no 'for' clause)"},
-    {"name": "Mahanaim", "named": "GEN.32.2", "reason": "GEN.32.2", "note": "'This is God's host'"},
-    {"name": "Succoth", "named": "GEN.33.17", "reason": "GEN.33.17", "note": "booths for his cattle"},
-    {"name": "El-beth-el", "named": "GEN.35.7", "reason": "GEN.35.7", "note": "'because there God appeared unto him'"},
-    {"name": "Allon-bachuth", "named": "GEN.35.8", "reason": "GEN.35.8", "note": "the oak of weeping"},
-    {"name": "Galeed", "named": "GEN.31.47", "reason": "GEN.31.48", "note": "'This heap is a witness'"},
-    {"name": "Mizpah", "named": "GEN.31.49", "reason": "GEN.31.49", "note": "'The LORD watch between me and thee'"},
-    {"name": "Abel-mizraim", "named": "GEN.50.11", "reason": "GEN.50.11", "note": "'a grievous mourning to the Egyptians'"},
-    {"name": "Jehovah-nissi", "named": "EXO.17.15", "reason": "EXO.17.16", "note": "the altar named; reason in the next verse"},
-    {"name": "Taberah", "named": "NUM.11.3", "reason": "NUM.11.3", "note": "'because the fire of the LORD burnt among them'"},
-    {"name": "Kibroth-hattaavah", "named": "NUM.11.34", "reason": "NUM.11.34", "note": "'because there they buried the people that lusted'"},
-    {"name": "Eshcol", "named": "NUM.13.24", "reason": "NUM.13.24", "note": "the cluster of grapes"},
-    {"name": "Hormah", "named": "NUM.21.3", "reason": "NUM.21.3", "note": "utterly destroyed"},
-    {"name": "Meribah", "named": "NUM.20.13", "reason": "NUM.20.13", "note": "'because the children of Israel strove'"},
-    {"name": "Achor", "named": "JOS.7.26", "reason": "JOS.7.25", "note": "'Why hast thou troubled us?'"},
-    {"name": "Ramath-lehi", "named": "JDG.15.17", "reason": "JDG.15.16", "note": "the jawbone"},
-    {"name": "En-hakkore", "named": "JDG.15.19", "reason": "JDG.15.19", "note": "the spring of him that called"},
-    {"name": "Jerubbaal", "named": "JDG.6.32", "reason": "JDG.6.32", "note": "'Let Baal plead against him'"},
-    {"name": "Mahaneh-dan", "named": "JDG.18.12", "reason": "JDG.18.12", "note": "Dan's camp"},
-    {"name": "Bochim", "named": "JDG.2.5", "reason": "JDG.2.4", "note": "the people wept"},
-    {"name": "Sela-hammahlekoth", "named": "1SA.23.28", "reason": "1SA.23.28", "note": "the rock of divisions"},
-    {"name": "Baal-perazim", "named": "2SA.5.20", "reason": "2SA.5.20", "note": "'The LORD hath broken forth'"},
-    {"name": "Perez-uzzah", "named": "2SA.6.8", "reason": "2SA.6.8", "note": "the LORD had made a breach upon Uzzah"},
-    {"name": "Absalom's place", "named": "2SA.18.18", "reason": "2SA.18.18", "note": "'I have no son to keep my name in remembrance'"},
-    {"name": "Solomon", "named": "1CH.22.9", "reason": "1CH.22.9", "note": "'his name shall be Solomon, and I will give peace'"},
-    {"name": "Maher-shalal-hash-baz", "named": "ISA.8.3", "reason": "ISA.8.4", "note": "reason in the next verse"},
-    {"name": "Magor-missabib", "named": "JER.20.3", "reason": "JER.20.4", "note": "reason in the next verse"},
-    {"name": "Jedidiah", "named": "2SA.12.25", "reason": "2SA.12.25", "note": "'because of the LORD'"},
-    {"name": "Gershom", "named": "EXO.18.3", "reason": "EXO.18.3", "note": "repeats Exod 2:22"},
-    {"name": "Eliezer", "named": "EXO.18.4", "reason": "EXO.18.4", "note": "'the God of my father was mine help'"},
-    {"name": "Israel", "named": "GEN.35.10", "reason": "GEN.32.28", "note": "the renaming repeated at Bethel"},
-    {"name": "Bethel", "named": "GEN.28.19", "reason": "GEN.28.17", "note": "'this is none other but the house of God' (two verses earlier)"},
-    {"name": "Penuel", "named": "GEN.32.30", "reason": "GEN.32.30", "note": "'for I have seen God face to face'"},
-    {"name": "Emmanuel", "named": "ISA.7.14", "reason": "MAT.1.23", "note": "translated only in Matthew"},
-    {"name": "Bethesda", "named": "JHN.5.2", "reason": "JHN.5.2", "note": "named, not explained"},
-    {"name": "Gabbatha", "named": "JHN.19.13", "reason": "JHN.19.13", "note": "'the Pavement' (a gloss)"},
-    {"name": "Rabboni", "named": "JHN.20.16", "reason": "JHN.20.16", "note": "a title glossed 'Master'"},
-    {"name": "Abba", "named": "MRK.14.36", "reason": "MRK.14.36", "note": "a title glossed 'Father'"},
-    {"name": "Talitha cumi", "named": "MRK.5.41", "reason": "MRK.5.41", "note": "words glossed, not a name"},
-    {"name": "Corban", "named": "MRK.7.11", "reason": "MRK.7.11", "note": "a term glossed 'a gift'"}
+    {
+      "name": "Beer-lahai-roi",
+      "named": "GEN.16.14",
+      "reason": "GEN.16.13",
+      "note": "the well named after Hagar's words, 'Thou God seest me'"
+    },
+    {
+      "name": "Jehovah-jireh",
+      "named": "GEN.22.14",
+      "reason": "GEN.22.14",
+      "note": "'In the mount of the LORD it shall be seen'"
+    },
+    {
+      "name": "Isaac",
+      "named": "GEN.17.19",
+      "reason": "GEN.17.17",
+      "note": "Abraham laughed (a play, no 'for' clause)",
+      "decision": "excluded",
+      "why": "A play on the name (Abraham laughs), with no stated reason; Isaac is explained at Gen 21:6."
+    },
+    {
+      "name": "Mahanaim",
+      "named": "GEN.32.2",
+      "reason": "GEN.32.2",
+      "note": "'This is God's host'"
+    },
+    {
+      "name": "Succoth",
+      "named": "GEN.33.17",
+      "reason": "GEN.33.17",
+      "note": "booths for his cattle"
+    },
+    {
+      "name": "El-beth-el",
+      "named": "GEN.35.7",
+      "reason": "GEN.35.7",
+      "note": "'because there God appeared unto him'"
+    },
+    {
+      "name": "Allon-bachuth",
+      "named": "GEN.35.8",
+      "reason": "GEN.35.8",
+      "note": "the oak of weeping"
+    },
+    {
+      "name": "Galeed",
+      "named": "GEN.31.47",
+      "reason": "GEN.31.48",
+      "note": "'This heap is a witness'"
+    },
+    {
+      "name": "Mizpah",
+      "named": "GEN.31.49",
+      "reason": "GEN.31.49",
+      "note": "'The LORD watch between me and thee'"
+    },
+    {
+      "name": "Abel-mizraim",
+      "named": "GEN.50.11",
+      "reason": "GEN.50.11",
+      "note": "'a grievous mourning to the Egyptians'"
+    },
+    {
+      "name": "Jehovah-nissi",
+      "named": "EXO.17.15",
+      "reason": "EXO.17.16",
+      "note": "the altar named; reason in the next verse"
+    },
+    {
+      "name": "Taberah",
+      "named": "NUM.11.3",
+      "reason": "NUM.11.3",
+      "note": "'because the fire of the LORD burnt among them'"
+    },
+    {
+      "name": "Kibroth-hattaavah",
+      "named": "NUM.11.34",
+      "reason": "NUM.11.34",
+      "note": "'because there they buried the people that lusted'"
+    },
+    {
+      "name": "Eshcol",
+      "named": "NUM.13.24",
+      "reason": "NUM.13.24",
+      "note": "the cluster of grapes"
+    },
+    {
+      "name": "Hormah",
+      "named": "NUM.21.3",
+      "reason": "NUM.21.3",
+      "note": "utterly destroyed"
+    },
+    {
+      "name": "Meribah",
+      "named": "NUM.20.13",
+      "reason": "NUM.20.13",
+      "note": "'because the children of Israel strove'"
+    },
+    {
+      "name": "Achor",
+      "named": "JOS.7.26",
+      "reason": "JOS.7.25",
+      "note": "'Why hast thou troubled us?'"
+    },
+    {
+      "name": "Ramath-lehi",
+      "named": "JDG.15.17",
+      "reason": "JDG.15.16",
+      "note": "the jawbone"
+    },
+    {
+      "name": "En-hakkore",
+      "named": "JDG.15.19",
+      "reason": "JDG.15.19",
+      "note": "the spring of him that called"
+    },
+    {
+      "name": "Jerubbaal",
+      "named": "JDG.6.32",
+      "reason": "JDG.6.32",
+      "note": "'Let Baal plead against him'"
+    },
+    {
+      "name": "Mahaneh-dan",
+      "named": "JDG.18.12",
+      "reason": "JDG.18.12",
+      "note": "Dan's camp"
+    },
+    {
+      "name": "Bochim",
+      "named": "JDG.2.5",
+      "reason": "JDG.2.4",
+      "note": "the people wept"
+    },
+    {
+      "name": "Sela-hammahlekoth",
+      "named": "1SA.23.28",
+      "reason": "1SA.23.28",
+      "note": "the rock of divisions"
+    },
+    {
+      "name": "Baal-perazim",
+      "named": "2SA.5.20",
+      "reason": "2SA.5.20",
+      "note": "'The LORD hath broken forth'"
+    },
+    {
+      "name": "Perez-uzzah",
+      "named": "2SA.6.8",
+      "reason": "2SA.6.8",
+      "note": "the LORD had made a breach upon Uzzah"
+    },
+    {
+      "name": "Absalom's place",
+      "named": "2SA.18.18",
+      "reason": "2SA.18.18",
+      "note": "'I have no son to keep my name in remembrance'"
+    },
+    {
+      "name": "Solomon",
+      "named": "1CH.22.9",
+      "reason": "1CH.22.9",
+      "note": "'his name shall be Solomon, and I will give peace'"
+    },
+    {
+      "name": "Maher-shalal-hash-baz",
+      "named": "ISA.8.3",
+      "reason": "ISA.8.4",
+      "note": "reason in the next verse"
+    },
+    {
+      "name": "Magor-missabib",
+      "named": "JER.20.3",
+      "reason": "JER.20.4",
+      "note": "reason in the next verse"
+    },
+    {
+      "name": "Jedidiah",
+      "named": "2SA.12.25",
+      "reason": "2SA.12.25",
+      "note": "'because of the LORD'"
+    },
+    {
+      "name": "Gershom",
+      "named": "EXO.18.3",
+      "reason": "EXO.18.3",
+      "note": "repeats Exod 2:22"
+    },
+    {
+      "name": "Eliezer",
+      "named": "EXO.18.4",
+      "reason": "EXO.18.4",
+      "note": "'the God of my father was mine help'"
+    },
+    {
+      "name": "Israel",
+      "named": "GEN.35.10",
+      "reason": "GEN.32.28",
+      "note": "the renaming repeated at Bethel"
+    },
+    {
+      "name": "Bethel",
+      "named": "GEN.28.19",
+      "reason": "GEN.28.17",
+      "note": "'this is none other but the house of God' (two verses earlier)"
+    },
+    {
+      "name": "Penuel",
+      "named": "GEN.32.30",
+      "reason": "GEN.32.30",
+      "note": "'for I have seen God face to face'"
+    },
+    {
+      "name": "Emmanuel",
+      "named": "ISA.7.14",
+      "reason": "MAT.1.23",
+      "note": "translated only in Matthew"
+    },
+    {
+      "name": "Bethesda",
+      "named": "JHN.5.2",
+      "reason": "JHN.5.2",
+      "note": "named, not explained",
+      "decision": "excluded",
+      "why": "Named, not explained."
+    },
+    {
+      "name": "Gabbatha",
+      "named": "JHN.19.13",
+      "reason": "JHN.19.13",
+      "note": "'the Pavement' (a gloss)"
+    },
+    {
+      "name": "Rabboni",
+      "named": "JHN.20.16",
+      "reason": "JHN.20.16",
+      "note": "a title glossed 'Master'"
+    },
+    {
+      "name": "Abba",
+      "named": "MRK.14.36",
+      "reason": "MRK.14.36",
+      "note": "a title glossed 'Father'"
+    },
+    {
+      "name": "Talitha cumi",
+      "named": "MRK.5.41",
+      "reason": "MRK.5.41",
+      "note": "words glossed, not a name",
+      "decision": "excluded",
+      "why": "Words glossed, not a name."
+    },
+    {
+      "name": "Corban",
+      "named": "MRK.7.11",
+      "reason": "MRK.7.11",
+      "note": "a term glossed 'a gift'",
+      "decision": "excluded",
+      "why": "A term glossed, not a name."
+    }
   ]
 }

@@ -16,14 +16,16 @@ covers the Bible's own explanations.
 
 | | |
 |---:|---|
-| **72** | explanations so far ([the list](docs/list.md)) |
-| **30** | candidate passages still to settle ([coverage](docs/coverage.md)) |
+| **117** | explanations: 85 namings, 8 renamings, 24 translated in the text ([the list](docs/list.md)) |
+| **13** | where the name and its reason sit in different verses |
+| **84** | linked to a person or place in [bible-data](https://github.com/BradyStephenson/bible-data) |
 
 ## What's here
 
 | File | What it is |
 |---|---|
 | [`docs/list.md`](docs/list.md) | **For readers.** Every explanation, with the reason quoted from the KJV |
+| [`docs/review.md`](docs/review.md) | **For proofreading.** Every entry as a short block, judgement calls first |
 | [`data/explanations.json`](data/explanations.json) | The data: one entry per explanation, with original-language token ranges |
 | [`data/explanations.csv`](data/explanations.csv) | The same with references and text, one row each, for spreadsheets |
 | [`data/candidates.json`](data/candidates.json) | Passages still to check, and [`docs/coverage.md`](docs/coverage.md), where each stands |
@@ -42,7 +44,7 @@ generated from that alignment.
 
 - **naming**: a name given with its reason (Reuben, Moses, Ichabod, Jesus in Matthew 1:21)
 - **renaming**: a name changed, with a reason (Abraham, Israel, Mara, Peter)
-- **gloss**: the text translates a name (Emmanuel, Cephas, Tabitha, Golgotha, Siloam)
+- **gloss**: the text translates or reads a name (Emmanuel, Cephas, Tabitha, Golgotha, Siloam; Nabal's "as his name is, so is he"). A few titles glossed in the text are included too: Messias, Rabbi, Rabboni, Abba.
 
 ## Corrections and additions
 

@@ -20,14 +20,17 @@ for e in entries:
     for v in e['name'] + e['because']:
         have.setdefault(verse(v), set()).add(e['id'])
 candidates = json.loads((HERE / 'data/candidates.json').read_text())['candidates']
-done = [c for c in candidates if c['named'] in have or c['reason'] in have]
-todo = [c for c in candidates if c not in done]
+excluded = [c for c in candidates if c.get('decision') == 'excluded']
+done = [c for c in candidates if c not in excluded and (c['named'] in have or c['reason'] in have)]
+todo = [c for c in candidates if c not in done and c not in excluded]
 out = ['# Coverage', '',
-       f'{len(candidates)} candidate passages checked against the list: {len(done)} covered, {len(todo)} to settle.',
+       f'{len(candidates)} candidate passages checked against the list: {len(done)} covered, {len(excluded)} excluded, {len(todo)} to settle.',
        'Candidates live in `data/candidates.json`; run `python3 tools/coverage.py` after adding entries.', '',
        '## To settle', '', '| Name | Named | Reason | Note |', '|---|---|---|---|']
 out += [f"| {c['name']} | {c['named']} | {c['reason']} | {c['note']} |" for c in todo]
+out += ['', '## Excluded', '', '| Name | Where | Why |', '|---|---|---|']
+out += [f"| {c['name']} | {c['named']} | {c['why']} |" for c in excluded]
 out += ['', '## Covered', '', '| Name | Named | Reason |', '|---|---|---|']
 out += [f"| {c['name']} | {c['named']} | {c['reason']} |" for c in done]
 (HERE / 'docs/coverage.md').write_text('\n'.join(out) + '\n')
-print(f'{len(done)} covered, {len(todo)} to settle')
+print(f'{len(done)} covered, {len(excluded)} excluded, {len(todo)} to settle')

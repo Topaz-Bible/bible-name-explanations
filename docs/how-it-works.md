@@ -10,7 +10,8 @@
   "kind": "naming",
   "name": ["V.EXO.002.010:011a"],
   "because": ["V.EXO.002.010:013a", "V.EXO.002.010:016a"],
-  "found_by": ["formula", "kjv"]
+  "found_by": ["formula", "kjv"],
+  "bible_data": "person:Moses_1"
 }
 ```
 
@@ -23,6 +24,13 @@
 - **`found_by`**: how the entry was found. `formula`: the original-language
   search below; `bdb` / `strongs` / `kjv`: a lexicon or the English agreed;
   `review`: settled by hand where the search held the case back.
+- **`bible_data`** (optional): the person or place in
+  [bible-data](https://github.com/BradyStephenson/bible-data) (CC BY 4.0), as
+  `person:<person_id>` or `place:<place_id>`, or a list when the name belongs
+  to two people (Boanerges). Its place list currently stops at Exodus 13, so
+  most later places aren't linked yet.
+- **`note`** (optional): anything a proofreader should know. Notes beginning
+  "Proofread:" mark judgement calls.
 
 Token IDs are Keyway Token Vault addresses: `V.` + book + chapter + verse, `:`
 + slot. Slots number the original-language words of a verse (`001a`, `002a`;
@@ -31,9 +39,9 @@ a letter after the number marks a variant or a word added later).
 ## Across verses
 
 The name and its reason may sit in different verses: Isaac is named in
-Genesis 21:3, and Sarah's "God hath made me to laugh" is 21:6. The reason
-itself stays within one verse for now; reasons that run on across verses are
-on the list to support.
+Genesis 21:3, and Sarah's "God hath made me to laugh" is 21:6. A reason may
+also run on across verses: `because` then starts in one verse and ends in a
+later one, and the build reads every verse between.
 
 ## How entries are found
 
@@ -58,8 +66,17 @@ Abba) are candidates; see [coverage](coverage.md).
 ## Checks
 
 `tools/build.py` refuses to write the list unless every token ID exists in
-the Vault, every name token carries the entry's Strong's number, and every
-reason runs forward within one verse.
+the Vault, at least one name token carries the entry's Strong's number (a
+name written as two words, like Jehovah-jireh, may be tagged on either), and
+every reason runs forward.
+
+## KJV quotes
+
+The quotes are generated from the KJV's word alignment, so they're only as
+complete as it is. Untagged words at a quote's edge are taken in when they run
+to punctuation ("I have gotten a man"), but not otherwise ("upon this rock",
+not "rock I will"). Where alignment gaps trim a quote, the entry's note says
+so (Simeon, Perez, Sitnah, Beulah, Gad).
 
 ```sh
 python3 tools/build.py --vault ../keyway-data/vault --kjv ../topaz-bible/assets/packages/eng.bible.kjv.zip

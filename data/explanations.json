@@ -16,7 +16,8 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "person:Eve_1"
     },
     {
       "id": "cain-gen-4-1",
@@ -32,7 +33,8 @@
       ],
       "found_by": [
         "review"
-      ]
+      ],
+      "bible_data": "person:Cain_1"
     },
     {
       "id": "seth-gen-4-25",
@@ -50,7 +52,8 @@
         "formula",
         "bdb",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Seth_1"
     },
     {
       "id": "noah-gen-5-29",
@@ -68,7 +71,8 @@
         "formula",
         "bdb",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Noah_1"
     },
     {
       "id": "peleg-gen-10-25",
@@ -84,11 +88,12 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "person:Peleg_1"
     },
     {
-      "id": "babylon-babylonian-gen-11-9",
-      "name_en": "Babylon",
+      "id": "babel-gen-11-9",
+      "name_en": "Babel",
       "strongs": "H894",
       "kind": "naming",
       "name": [
@@ -101,7 +106,8 @@
       "found_by": [
         "formula",
         "bdb"
-      ]
+      ],
+      "bible_data": "place:Babel_1"
     },
     {
       "id": "ishmael-gen-16-11",
@@ -119,7 +125,28 @@
         "formula",
         "bdb",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Ishmael_1"
+    },
+    {
+      "id": "beer-lahai-roi-gen-16-13",
+      "name_en": "Beer-lahai-roi",
+      "strongs": "H883",
+      "kind": "naming",
+      "name": [
+        "V.GEN.016.014:005a",
+        "V.GEN.016.014:006a",
+        "V.GEN.016.014:007a"
+      ],
+      "because": [
+        "V.GEN.016.013:006a",
+        "V.GEN.016.013:015a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Hagar names the well after her words to God in the verse before.",
+      "bible_data": "place:Beer-lahai-roi_1"
     },
     {
       "id": "abraham-gen-17-5",
@@ -135,7 +162,26 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "person:Abram_1"
+    },
+    {
+      "id": "zoar-gen-19-20",
+      "name_en": "Zoar",
+      "strongs": "H6820",
+      "kind": "naming",
+      "name": [
+        "V.GEN.019.022:017a"
+      ],
+      "because": [
+        "V.GEN.019.020:013a",
+        "V.GEN.019.020:015a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Named in 19:22 after Lot's plea in 19:20 (\"is it not a little one?\").",
+      "bible_data": "place:Zoar_1"
     },
     {
       "id": "isaac-gen-21-6",
@@ -151,7 +197,9 @@
       ],
       "found_by": [
         "review"
-      ]
+      ],
+      "note": "Named in 21:3; Sarah's explanation is in 21:6.",
+      "bible_data": "person:Isaac_1"
     },
     {
       "id": "beersheba-gen-21-31",
@@ -168,7 +216,27 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "place:Beersheba_1"
+    },
+    {
+      "id": "jehovah-jireh-gen-22-14",
+      "name_en": "Jehovah-jireh",
+      "strongs": "H7200N",
+      "kind": "naming",
+      "name": [
+        "V.GEN.022.014:006a",
+        "V.GEN.022.014:007a"
+      ],
+      "because": [
+        "V.GEN.022.014:008a",
+        "V.GEN.022.014:013a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "TIPNR files this name under God; the Strong's number is the one STEP gives the second word.",
+      "bible_data": "place:The LORD Will Provide_1"
     },
     {
       "id": "esau-gen-25-25",
@@ -184,7 +252,8 @@
       ],
       "found_by": [
         "review"
-      ]
+      ],
+      "bible_data": "person:Esau_1"
     },
     {
       "id": "jacob-gen-25-26",
@@ -200,7 +269,8 @@
       ],
       "found_by": [
         "review"
-      ]
+      ],
+      "bible_data": "person:Jacob_1"
     },
     {
       "id": "edom-gen-25-30",
@@ -216,7 +286,8 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "place:Edom_1"
     },
     {
       "id": "esek-gen-26-20",
@@ -233,7 +304,26 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "place:Esek_1"
+    },
+    {
+      "id": "sitnah-gen-26-21",
+      "name_en": "Sitnah",
+      "strongs": "H7856",
+      "kind": "naming",
+      "name": [
+        "V.GEN.026.021:009a"
+      ],
+      "because": [
+        "V.GEN.026.021:004a",
+        "V.GEN.026.021:006a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "The KJV's \"for that also\" isn't aligned to these Hebrew words yet, so the quote stops at \"strove\".",
+      "bible_data": "place:Sitnah_1"
     },
     {
       "id": "rehoboth-gen-26-22",
@@ -250,7 +340,45 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "place:Rehoboth_1"
+    },
+    {
+      "id": "jacob-gen-27-36",
+      "name_en": "Jacob",
+      "strongs": "H3290",
+      "kind": "gloss",
+      "name": [
+        "V.GEN.027.036:005a"
+      ],
+      "because": [
+        "V.GEN.027.036:006a",
+        "V.GEN.027.036:008a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Esau's own reading of the name (\"Is not he rightly named Jacob?\").",
+      "bible_data": "person:Jacob_1"
+    },
+    {
+      "id": "bethel-gen-28-17",
+      "name_en": "Bethel",
+      "strongs": "H1008G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.028.019:006a",
+        "V.GEN.028.019:007a"
+      ],
+      "because": [
+        "V.GEN.028.017:007a",
+        "V.GEN.028.017:015a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Jacob's words two verses before the naming.",
+      "bible_data": "place:Bethel_1"
     },
     {
       "id": "reuben-gen-29-32",
@@ -267,7 +395,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Reuben_1"
     },
     {
       "id": "simeon-gen-29-33",
@@ -285,7 +414,9 @@
         "formula",
         "bdb",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Simeon_1",
+      "note": "The KJV's closing \"son also\" isn't aligned to these Hebrew words yet, so the quote stops at \"this\"."
     },
     {
       "id": "levi-gen-29-34",
@@ -301,7 +432,8 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "person:Levi_1"
     },
     {
       "id": "judah-gen-29-35",
@@ -318,7 +450,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Judah_1"
     },
     {
       "id": "dan-gen-30-6",
@@ -334,7 +467,8 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "person:Dan_1"
     },
     {
       "id": "naphtali-gen-30-8",
@@ -351,7 +485,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Naphtali_1"
     },
     {
       "id": "gad-gen-30-11",
@@ -368,7 +503,9 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Gad_1",
+      "note": "No KJV quote: Leah's words (\"A troop cometh\") are a Ketiv/Qere reading not yet aligned in the KJV."
     },
     {
       "id": "asher-gen-30-13",
@@ -385,7 +522,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Asher_1"
     },
     {
       "id": "issachar-gen-30-18",
@@ -402,7 +540,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Issachar_1"
     },
     {
       "id": "zebulun-gen-30-20",
@@ -419,7 +558,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Zebulun_1"
     },
     {
       "id": "joseph-gen-30-23",
@@ -435,7 +575,9 @@
       ],
       "found_by": [
         "review"
-      ]
+      ],
+      "note": "Rachel gives two reasons: 30:23 (\"taken away\", asaph) and 30:24 (\"add\", yosef).",
+      "bible_data": "person:Joseph_1"
     },
     {
       "id": "joseph-gen-30-24",
@@ -452,7 +594,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Joseph_1"
     },
     {
       "id": "galeed-gen-31-48",
@@ -471,6 +614,39 @@
       ]
     },
     {
+      "id": "mizpah-gen-31-49",
+      "name_en": "Mizpah",
+      "strongs": "H4709H",
+      "kind": "naming",
+      "name": [
+        "V.GEN.031.049:001a"
+      ],
+      "because": [
+        "V.GEN.031.049:002a",
+        "V.GEN.031.049:011a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "mahanaim-gen-32-2",
+      "name_en": "Mahanaim",
+      "strongs": "H4266",
+      "kind": "naming",
+      "name": [
+        "V.GEN.032.002:012a"
+      ],
+      "because": [
+        "V.GEN.032.002:005a",
+        "V.GEN.032.002:007a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "bible_data": "place:Mahanaim_1"
+    },
+    {
       "id": "israel-israelite-gen-32-28",
       "name_en": "Israel",
       "strongs": "H3478",
@@ -484,7 +660,8 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "person:Jacob_1"
     },
     {
       "id": "penuel-gen-32-30",
@@ -501,7 +678,25 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "place:Peniel_1"
+    },
+    {
+      "id": "succoth-gen-33-17",
+      "name_en": "Succoth",
+      "strongs": "H5523G",
+      "kind": "naming",
+      "name": [
+        "V.GEN.033.017:015a"
+      ],
+      "because": [
+        "V.GEN.033.017:007a",
+        "V.GEN.033.017:009a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "bible_data": "place:Succoth_1"
     },
     {
       "id": "el-bethel-gen-35-7",
@@ -519,7 +714,27 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "place:El-bethel_1"
+    },
+    {
+      "id": "allon-bachuth-gen-35-8",
+      "name_en": "Allon-bachuth",
+      "strongs": "H439",
+      "kind": "naming",
+      "name": [
+        "V.GEN.035.008:013a",
+        "V.GEN.035.008:014a"
+      ],
+      "because": [
+        "V.GEN.035.008:001a",
+        "V.GEN.035.008:010a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Proofread: the event is told (Deborah buried under an oak); the weeping in the name is implied, not stated.",
+      "bible_data": "place:Allon-bacuth_1"
     },
     {
       "id": "perez-gen-38-29",
@@ -535,7 +750,9 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "person:Perez_1",
+      "note": "The KJV's \"be upon thee\" isn't aligned to these Hebrew words yet, so the quote stops at \"breach\"."
     },
     {
       "id": "manasseh-manassite-gen-41-51",
@@ -552,7 +769,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Manasseh_1"
     },
     {
       "id": "ephraim-ephraimite-gen-41-52",
@@ -568,7 +786,8 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "person:Ephraim_1"
     },
     {
       "id": "abel-mizraim-gen-50-11",
@@ -585,7 +804,8 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "place:Atad_1"
     },
     {
       "id": "moses-exo-2-10",
@@ -602,7 +822,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Moses_1"
     },
     {
       "id": "gershom-exo-2-22",
@@ -620,7 +841,8 @@
         "formula",
         "bdb",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Gershom_1"
     },
     {
       "id": "marah-exo-15-23",
@@ -671,6 +893,24 @@
       ]
     },
     {
+      "id": "jehovah-nissi-exo-17-16",
+      "name_en": "Jehovah-nissi",
+      "strongs": "H5251G",
+      "kind": "naming",
+      "name": [
+        "V.EXO.017.015:006a",
+        "V.EXO.017.015:007a"
+      ],
+      "because": [
+        "V.EXO.017.016:001a",
+        "V.EXO.017.016:011a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "The altar is named in 17:15; the reason follows in 17:16."
+    },
+    {
       "id": "gershom-exo-18-3",
       "name_en": "Gershom",
       "strongs": "H1647G",
@@ -684,7 +924,8 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "person:Gershom_1"
     },
     {
       "id": "eliezer-exo-18-4",
@@ -700,7 +941,8 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "person:Eliezer_2"
     },
     {
       "id": "taberah-num-11-3",
@@ -738,6 +980,56 @@
       ]
     },
     {
+      "id": "eshcol-num-13-24",
+      "name_en": "Eshcol",
+      "strongs": "H812H",
+      "kind": "naming",
+      "name": [
+        "V.NUM.013.024:005a"
+      ],
+      "because": [
+        "V.NUM.013.024:006a",
+        "V.NUM.013.024:013a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "bible_data": "person:Eshcol_1"
+    },
+    {
+      "id": "meribah-num-20-13",
+      "name_en": "Meribah",
+      "strongs": "H4809H",
+      "kind": "naming",
+      "name": [
+        "V.NUM.020.013:003a"
+      ],
+      "because": [
+        "V.NUM.020.013:004a",
+        "V.NUM.020.013:009a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "hormah-num-21-3",
+      "name_en": "Hormah",
+      "strongs": "H2767",
+      "kind": "naming",
+      "name": [
+        "V.NUM.021.003:015a"
+      ],
+      "because": [
+        "V.NUM.021.003:008a",
+        "V.NUM.021.003:011a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "bible_data": "person:King of Hormah_1"
+    },
+    {
       "id": "gilgal-jos-5-9",
       "name_en": "Gilgal",
       "strongs": "H1537G",
@@ -752,7 +1044,151 @@
       "found_by": [
         "formula",
         "bdb"
-      ]
+      ],
+      "bible_data": "person:King of Goiim in Gilgal_1"
+    },
+    {
+      "id": "achor-jos-7-25",
+      "name_en": "Achor",
+      "strongs": "H5911",
+      "kind": "naming",
+      "name": [
+        "V.JOS.007.026:020a"
+      ],
+      "because": [
+        "V.JOS.007.025:003a",
+        "V.JOS.007.025:008a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Named in 7:26 after Joshua's words in 7:25."
+    },
+    {
+      "id": "hormah-jdg-1-17",
+      "name_en": "Hormah",
+      "strongs": "H2767",
+      "kind": "naming",
+      "name": [
+        "V.JDG.001.017:017a"
+      ],
+      "because": [
+        "V.JDG.001.017:011a",
+        "V.JDG.001.017:012a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Compare Numbers 21:3.",
+      "bible_data": "person:King of Hormah_1"
+    },
+    {
+      "id": "bochim-jdg-2-4",
+      "name_en": "Bochim",
+      "strongs": "H1066",
+      "kind": "naming",
+      "name": [
+        "V.JDG.002.005:005a"
+      ],
+      "because": [
+        "V.JDG.002.004:012a",
+        "V.JDG.002.004:016a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Named in 2:5 after the weeping in 2:4."
+    },
+    {
+      "id": "jehovah-shalom-jdg-6-23",
+      "name_en": "Jehovah-shalom",
+      "strongs": "H7965H",
+      "kind": "naming",
+      "name": [
+        "V.JDG.006.024:008a",
+        "V.JDG.006.024:009a"
+      ],
+      "because": [
+        "V.JDG.006.023:004a",
+        "V.JDG.006.023:009a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Gideon names the altar after the LORD's \"Peace be unto thee\" in 6:23.",
+      "bible_data": "person:YHVH_1"
+    },
+    {
+      "id": "jerubbaal-jdg-6-32",
+      "name_en": "Jerubbaal",
+      "strongs": "H3378",
+      "kind": "renaming",
+      "name": [
+        "V.JDG.006.032:005a"
+      ],
+      "because": [
+        "V.JDG.006.032:007a",
+        "V.JDG.006.032:013a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Gideon's new name.",
+      "bible_data": "person:Gideon_1"
+    },
+    {
+      "id": "ramath-lehi-jdg-15-17",
+      "name_en": "Ramath-lehi",
+      "strongs": "H7437",
+      "kind": "naming",
+      "name": [
+        "V.JDG.015.017:010a",
+        "V.JDG.015.017:011a"
+      ],
+      "because": [
+        "V.JDG.015.017:004a",
+        "V.JDG.015.017:006a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Proofread: the reason is the act (he threw away the jawbone), not a \"for\" clause."
+    },
+    {
+      "id": "en-hakkore-jdg-15-18",
+      "name_en": "En-hakkore",
+      "strongs": "H5875",
+      "kind": "naming",
+      "name": [
+        "V.JDG.015.019:018a",
+        "V.JDG.015.019:019a"
+      ],
+      "because": [
+        "V.JDG.015.018:003a",
+        "V.JDG.015.018:005a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "\"The spring of him that called\": the calling is in the verse before."
+    },
+    {
+      "id": "mahaneh-dan-jdg-18-12",
+      "name_en": "Mahaneh-dan",
+      "strongs": "H4265",
+      "kind": "naming",
+      "name": [
+        "V.JDG.018.012:011a",
+        "V.JDG.018.012:012a"
+      ],
+      "because": [
+        "V.JDG.018.012:001a",
+        "V.JDG.018.012:005a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Proofread: the reason is the camp itself (\"pitched in Kirjath-jearim\")."
     },
     {
       "id": "mara-rut-1-20",
@@ -768,7 +1204,8 @@
       ],
       "found_by": [
         "review"
-      ]
+      ],
+      "bible_data": "person:Naomi_1"
     },
     {
       "id": "samuel-1sa-1-20",
@@ -786,7 +1223,8 @@
         "formula",
         "bdb",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Samuel_2"
     },
     {
       "id": "ichabod-1sa-4-21",
@@ -803,7 +1241,8 @@
       ],
       "found_by": [
         "review"
-      ]
+      ],
+      "bible_data": "person:Ichabod_1"
     },
     {
       "id": "ebenezer-1sa-7-12",
@@ -823,6 +1262,24 @@
       ]
     },
     {
+      "id": "sela-hammahlekoth-1sa-23-28",
+      "name_en": "Sela-hammahlekoth",
+      "strongs": "H5555",
+      "kind": "naming",
+      "name": [
+        "V.1SA.023.028:014a",
+        "V.1SA.023.028:015a"
+      ],
+      "because": [
+        "V.1SA.023.028:001a",
+        "V.1SA.023.028:008a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Proofread: the event is told (Saul turns back); the \"divisions\" or \"escape\" in the name is implied."
+    },
+    {
       "id": "nabal-1sa-25-25",
       "name_en": "Nabal",
       "strongs": "H5037",
@@ -836,7 +1293,8 @@
       ],
       "found_by": [
         "review"
-      ]
+      ],
+      "bible_data": "person:Nabal_1"
     },
     {
       "id": "baal-perazim-2sa-5-20",
@@ -857,6 +1315,23 @@
       ]
     },
     {
+      "id": "perez-uzzah-2sa-6-8",
+      "name_en": "Perez-uzzah",
+      "strongs": "H6560H",
+      "kind": "naming",
+      "name": [
+        "V.2SA.006.008:012a",
+        "V.2SA.006.008:013a"
+      ],
+      "because": [
+        "V.2SA.006.008:003a",
+        "V.2SA.006.008:008a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
       "id": "jedidiah-2sa-12-25",
       "name_en": "Jedidiah",
       "strongs": "H3041",
@@ -870,7 +1345,43 @@
       ],
       "found_by": [
         "review"
-      ]
+      ],
+      "bible_data": "person:Solomon_1"
+    },
+    {
+      "id": "absalom-s-place-2sa-18-18",
+      "name_en": "Absalom's place",
+      "strongs": "H3027I",
+      "kind": "naming",
+      "name": [
+        "V.2SA.018.018:025a",
+        "V.2SA.018.018:026a"
+      ],
+      "because": [
+        "V.2SA.018.018:011a",
+        "V.2SA.018.018:018a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "A monument's name (\"Absalom's place\", literally \"hand\")."
+    },
+    {
+      "id": "cabul-1ki-9-13",
+      "name_en": "Cabul",
+      "strongs": "H3521H",
+      "kind": "naming",
+      "name": [
+        "V.1KI.009.013:012a"
+      ],
+      "because": [
+        "V.1KI.009.013:003a",
+        "V.1KI.009.013:008a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Proofread: Hiram's complaint is the reason; the meaning of Cabul (\"as nothing\"?) is implied, not stated."
     },
     {
       "id": "peleg-1ch-1-19",
@@ -886,7 +1397,8 @@
       ],
       "found_by": [
         "formula"
-      ]
+      ],
+      "bible_data": "person:Peleg_1"
     },
     {
       "id": "jabez-1ch-4-9",
@@ -903,7 +1415,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Jabez_1"
     },
     {
       "id": "beriah-1ch-7-23",
@@ -921,7 +1434,26 @@
         "formula",
         "bdb",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Beriah_2"
+    },
+    {
+      "id": "perez-uzza-1ch-13-11",
+      "name_en": "Perez-uzza",
+      "strongs": "H6560G",
+      "kind": "naming",
+      "name": [
+        "V.1CH.013.011:011a",
+        "V.1CH.013.011:012a"
+      ],
+      "because": [
+        "V.1CH.013.011:003a",
+        "V.1CH.013.011:007a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Parallel to 2 Samuel 6:8."
     },
     {
       "id": "baal-perazim-1ch-14-11",
@@ -942,6 +1474,135 @@
       ]
     },
     {
+      "id": "solomon-1ch-22-9",
+      "name_en": "Solomon",
+      "strongs": "H8010",
+      "kind": "naming",
+      "name": [
+        "V.1CH.022.009:015a"
+      ],
+      "because": [
+        "V.1CH.022.009:018a",
+        "V.1CH.022.009:023a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "God's own explanation of the name to David.",
+      "bible_data": "person:Solomon_1"
+    },
+    {
+      "id": "berachah-2ch-20-26",
+      "name_en": "Berachah",
+      "strongs": "H1294H",
+      "kind": "naming",
+      "name": [
+        "V.2CH.020.026:018a",
+        "V.2CH.020.026:019a"
+      ],
+      "because": [
+        "V.2CH.020.026:006a",
+        "V.2CH.020.026:010a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "bible_data": "person:Beracah_1"
+    },
+    {
+      "id": "maher-shalal-hash-baz-isa-8-4",
+      "name_en": "Maher-shalal-hash-baz",
+      "strongs": "H4122",
+      "kind": "naming",
+      "name": [
+        "V.ISA.008.003:012a",
+        "V.ISA.008.003:013a",
+        "V.ISA.008.003:014a",
+        "V.ISA.008.003:015a"
+      ],
+      "because": [
+        "V.ISA.008.004:001a",
+        "V.ISA.008.004:017a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Named in 8:3; the reason follows in 8:4.",
+      "bible_data": "person:Immanuel_1"
+    },
+    {
+      "id": "hephzibah-isa-62-4",
+      "name_en": "Hephzibah",
+      "strongs": "H2657H",
+      "kind": "renaming",
+      "name": [
+        "V.ISA.062.004:014a",
+        "V.ISA.062.004:015a"
+      ],
+      "because": [
+        "V.ISA.062.004:018a",
+        "V.ISA.062.004:021a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Zion renamed: no longer \"Forsaken\".",
+      "bible_data": "person:Hephzibah_1"
+    },
+    {
+      "id": "beulah-isa-62-4",
+      "name_en": "Beulah",
+      "strongs": "H1166G",
+      "kind": "renaming",
+      "name": [
+        "V.ISA.062.004:017a"
+      ],
+      "because": [
+        "V.ISA.062.004:022a",
+        "V.ISA.062.004:023a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "The land renamed: no longer \"Desolate\". No KJV quote: \"married\" isn't aligned to the Hebrew yet."
+    },
+    {
+      "id": "magor-missabib-jer-20-4",
+      "name_en": "Magor-missabib",
+      "strongs": "H4036",
+      "kind": "renaming",
+      "name": [
+        "V.JER.020.003:019a",
+        "V.JER.020.003:020a"
+      ],
+      "because": [
+        "V.JER.020.004:005a",
+        "V.JER.020.004:010a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Pashur's new name; the reason follows in 20:4.",
+      "bible_data": "person:Pashhur_2"
+    },
+    {
+      "id": "bamah-ezk-20-29",
+      "name_en": "Bamah",
+      "strongs": "H1117",
+      "kind": "naming",
+      "name": [
+        "V.EZK.020.029:011a"
+      ],
+      "because": [
+        "V.EZK.020.029:003a",
+        "V.EZK.020.029:008a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Proofread: a wordplay on \"high place\" (bamah) and \"ye go\" (ba'im); the explanation is God's question."
+    },
+    {
       "id": "jezreel-hos-1-4",
       "name_en": "Jezreel",
       "strongs": "H3157K",
@@ -956,7 +1617,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Jezreel_2"
     },
     {
       "id": "lo-ruhamah-hos-1-6",
@@ -974,7 +1636,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Lo-ruhamah_1"
     },
     {
       "id": "lo-ammi-hos-1-9",
@@ -992,7 +1655,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Lo-ammi_1"
     },
     {
       "id": "jesus-mat-1-21",
@@ -1008,7 +1672,8 @@
       ],
       "found_by": [
         "review"
-      ]
+      ],
+      "bible_data": "person:Jesus_1"
     },
     {
       "id": "immanuel-mat-1-23",
@@ -1025,7 +1690,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:YHVH_1"
     },
     {
       "id": "peter-mat-16-18",
@@ -1041,7 +1707,8 @@
       ],
       "found_by": [
         "review"
-      ]
+      ],
+      "bible_data": "person:Simon_1"
     },
     {
       "id": "golgotha-mat-27-33",
@@ -1074,7 +1741,62 @@
       ],
       "found_by": [
         "formula"
+      ],
+      "bible_data": [
+        "person:James_1",
+        "person:John_2"
       ]
+    },
+    {
+      "id": "abba-mrk-14-36",
+      "name_en": "Abba",
+      "strongs": "G5",
+      "kind": "gloss",
+      "name": [
+        "V.MRK.014.036:003a"
+      ],
+      "because": [
+        "V.MRK.014.036:004a",
+        "V.MRK.014.036:005a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "A title, not a name.",
+      "bible_data": "person:YHVH_2"
+    },
+    {
+      "id": "golgotha-mrk-15-22",
+      "name_en": "Golgotha",
+      "strongs": "G1115",
+      "kind": "gloss",
+      "name": [
+        "V.MRK.015.022:006a"
+      ],
+      "because": [
+        "V.MRK.015.022:011a",
+        "V.MRK.015.022:012a"
+      ],
+      "found_by": [
+        "review"
+      ]
+    },
+    {
+      "id": "rabbi-jhn-1-38",
+      "name_en": "Rabbi",
+      "strongs": "G4461",
+      "kind": "gloss",
+      "name": [
+        "V.JHN.001.038:017a"
+      ],
+      "because": [
+        "V.JHN.001.038:021a",
+        "V.JHN.001.038:021a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "A title, not a name; included like Rabboni."
     },
     {
       "id": "messiah-jhn-1-41",
@@ -1090,7 +1812,8 @@
       ],
       "found_by": [
         "review"
-      ]
+      ],
+      "bible_data": "person:Jesus_1"
     },
     {
       "id": "cephas-jhn-1-42",
@@ -1107,7 +1830,25 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Simon_1"
+    },
+    {
+      "id": "messiah-jhn-4-25",
+      "name_en": "Messiah",
+      "strongs": "G3323",
+      "kind": "gloss",
+      "name": [
+        "V.JHN.004.025:007a"
+      ],
+      "because": [
+        "V.JHN.004.025:011a",
+        "V.JHN.004.025:011a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "A title, not a name; compare John 1:41."
     },
     {
       "id": "siloam-jhn-9-7",
@@ -1139,7 +1880,60 @@
       ],
       "found_by": [
         "review"
-      ]
+      ],
+      "bible_data": "person:Thomas_1"
+    },
+    {
+      "id": "gabbatha-jhn-19-13",
+      "name_en": "Gabbatha",
+      "strongs": "G1042",
+      "kind": "gloss",
+      "name": [
+        "V.JHN.019.013:023a"
+      ],
+      "because": [
+        "V.JHN.019.013:020a",
+        "V.JHN.019.013:020a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "The Greek name (the Pavement) comes first; Gabbatha is the Hebrew."
+    },
+    {
+      "id": "golgotha-jhn-19-17",
+      "name_en": "Golgotha",
+      "strongs": "G1115",
+      "kind": "gloss",
+      "name": [
+        "V.JHN.019.017:015a"
+      ],
+      "because": [
+        "V.JHN.019.017:010a",
+        "V.JHN.019.017:011a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "John gives the Greek first, then the Hebrew name. The KJV alignment pulls in \"place called\" from the start of the phrase."
+    },
+    {
+      "id": "rabboni-jhn-20-16",
+      "name_en": "Rabboni",
+      "strongs": "G4462",
+      "kind": "gloss",
+      "name": [
+        "V.JHN.020.016:011a"
+      ],
+      "because": [
+        "V.JHN.020.016:014a",
+        "V.JHN.020.016:014a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "A title, not a name; included like Messias.",
+      "bible_data": "person:YHVH_1"
     },
     {
       "id": "akeldama-act-1-19",
@@ -1172,7 +1966,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Joseph_12"
     },
     {
       "id": "tabitha-act-9-36",
@@ -1189,7 +1984,79 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "person:Tabitha_1"
+    },
+    {
+      "id": "elymas-act-13-8",
+      "name_en": "Elymas",
+      "strongs": "G1681",
+      "kind": "gloss",
+      "name": [
+        "V.ACT.013.008:004a"
+      ],
+      "because": [
+        "V.ACT.013.008:006a",
+        "V.ACT.013.008:006a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Proofread: \"for so is his name by interpretation\" glosses Elymas as \"the sorcerer\"; commentators debate how the two names relate."
+    },
+    {
+      "id": "abba-rom-8-15",
+      "name_en": "Abba",
+      "strongs": "G5",
+      "kind": "gloss",
+      "name": [
+        "V.ROM.008.015:016a"
+      ],
+      "because": [
+        "V.ROM.008.015:017a",
+        "V.ROM.008.015:018a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "A title, not a name.",
+      "bible_data": "person:YHVH_2"
+    },
+    {
+      "id": "abba-gal-4-6",
+      "name_en": "Abba",
+      "strongs": "G5",
+      "kind": "gloss",
+      "name": [
+        "V.GAL.004.006:018a"
+      ],
+      "because": [
+        "V.GAL.004.006:019a",
+        "V.GAL.004.006:020a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "A title, not a name.",
+      "bible_data": "person:YHVH_2"
+    },
+    {
+      "id": "melchizedek-heb-7-2",
+      "name_en": "Melchizedek",
+      "strongs": "G3198",
+      "kind": "gloss",
+      "name": [
+        "V.HEB.007.001:004a"
+      ],
+      "because": [
+        "V.HEB.007.002:010a",
+        "V.HEB.007.002:012a"
+      ],
+      "found_by": [
+        "review"
+      ],
+      "note": "Named in 7:1, translated in 7:2. The KJV's \"by\" isn't aligned, so the quote starts at \"interpretation\".",
+      "bible_data": "person:Melchizedek_1"
     },
     {
       "id": "salem-heb-7-2",
@@ -1206,7 +2073,8 @@
       "found_by": [
         "formula",
         "kjv"
-      ]
+      ],
+      "bible_data": "place:Jerusalem_1"
     }
   ]
 }
