@@ -1,20 +1,25 @@
 #!/usr/bin/env python3
 """Build the readable lists from data/explanations.json.
 
-Every entry records where Scripture itself explains a name as token IDs in
-the Keyway Token Vault ("V.EXO.002.010:011a": book, chapter, verse, slot).
-This script reads the Vault (for the original words) and a Topaz KJV package
-(for the English) and writes:
+Every entry is anchored to KJV word positions ("GEN.029.033:011": book,
+chapter, verse, word number in the Topaz KJV). The KJV is a settled text, so
+those anchors never change. The Keyway Token Vault IDs under "vault" are
+derived from them here, through the KJV's word alignment (each KJV word's `k`
+/ `ka` slots), and rewritten on every build: as the alignment improves or the
+Vault adds slots, the Vault ranges correct themselves.
 
+This script writes:
+
+  data/explanations.json the "vault" block of every entry, re-derived
   data/explanations.csv  one row per entry, with references and text
   docs/list.md           the list for readers
+  docs/review.md         every entry as a short block, for proofreading
 
-It also checks every entry: IDs exist in the Vault, a name token carries the
-entry's Strong's number, reason endpoints are in order, and every token ID
-still points at the word it did when the entry was made (data/anchors.json).
-The Vault grows as witness readings add slots; when a referenced word changes,
-the build stops and names the entries to re-check. After checking them, run
-again with --accept to record the new words.
+It checks every entry: the KJV anchors still hold the words they did when the
+entry was made (data/anchors.json; the KJV should never change, so a mismatch
+stops the build), the derived Vault IDs exist, a name token carries the
+entry's Strong's number, and the reason runs forward. Entries whose words
+aren't aligned yet are listed, not failed: their "vault" fills in later.
 
     python3 tools/build.py --vault ../keyway-data/vault \
         --kjv ../topaz-bible/assets/packages/eng.bible.kjv.zip
@@ -50,7 +55,8 @@ BOOKS = {
     '1PE': '1 Peter', '2PE': '2 Peter', '1JN': '1 John', '2JN': '2 John', '3JN': '3 John', 'JUD': 'Jude',
     'REV': 'Revelation',
 }
-ADDRESS = re.compile(r'^V\.([1-3A-Z][A-Z]{2})\.(\d{3})\.(\d{3}):(\w+)$')
+ADDRESS = re.compile(r'^V\.([1-3A-Z][A-Z]{2})\.(\d{3})\.(\d{3}):([\w~]+)$')
+KJV_ADDRESS = re.compile(r'^([1-3A-Z][A-Z]{2})\.(\d{3})\.(\d{3}):(\d{3})$')
 
 
 def parse(vid):
@@ -59,6 +65,14 @@ def parse(vid):
         raise ValueError(f'not a Vault token ID: {vid}')
     book, chapter, verse, slot = m.groups()
     return book, int(chapter), int(verse), slot
+
+
+def parse_kjv(kid):
+    m = KJV_ADDRESS.match(kid)
+    if not m:
+        raise ValueError(f'not a KJV word ID: {kid}')
+    book, chapter, verse, n = m.groups()
+    return book, int(chapter), int(verse), int(n)
 
 
 def slot_rank(slot):
@@ -94,72 +108,58 @@ class KJV:
         self.zip = zipfile.ZipFile(path)
         self.books = {}
 
-    def verse(self, book, chapter, verse):
+    def book(self, book):
         if book not in self.books:
             self.books[book] = json.loads(self.zip.read(f'{book}.json'))
-        for c in self.books[book]['chapters']:
+        return self.books[book]
+
+    def word(self, kid):
+        book, chapter, verse, n = parse_kjv(kid)
+        for c in self.book(book)['chapters']:
             if c['chapter'] == chapter:
                 for v in c['verses']:
                     if v['verse'] == verse:
-                        return v['tokens']
-        return []
+                        for t in v['tokens']:
+                            if t['n'] == n:
+                                return t
+        raise ValueError(f'{kid} is not in the KJV')
 
-    def words(self, first, last, keep_end=False):
-        """The KJV words rendering the Vault slots first..last. A reason that
-        runs on across verses is read verse by verse and joined."""
-        book, c1, v1, lo = parse(first)
-        _, c2, v2, hi = parse(last)
-        if (c1, v1) != (c2, v2):
-            parts = []
-            for c, v, a, z in self.verses_between(book, c1, v1, c2, v2):
-                start = first if (c, v) == (c1, v1) else f'V.{book}.{c:03d}.{v:03d}:000a'
-                end = last if (c, v) == (c2, v2) else f'V.{book}.{c:03d}.{v:03d}:999z'
-                parts.append(self.words(start, end, keep_end=(c, v) != (c2, v2)))
-            return ' '.join(p for p in parts if p)
-        verse = v1
-        chapter = c1
-        tokens = self.verse(book, chapter, verse)
-        lo, hi = slot_rank(lo), slot_rank(hi)
-        hits = [t['n'] for t in tokens
-                if any(k and slot_rank(k) >= lo and slot_rank(k) <= hi for k in [t.get('k'), *t.get('ka', [])])]
-        if not hits:
-            return ''
-        first, last = min(hits), max(hits)
-        by_n = {t['n']: t for t in tokens}
-        tagged = lambda n: by_n[n].get('k') or by_n[n].get('ka')
-        # Untagged words at the edges belong to the reason up to punctuation:
-        # "I have gotten", "will love me".
-        # Only a run that reaches punctuation (or the verse's edge) joins;
-        # "rock I will build" stops at "rock".
-        n = first
-        while n - 1 in by_n and not tagged(n - 1) and not by_n[n - 1].get('a'):
-            n -= 1
-        if n - 1 not in by_n or by_n[n - 1].get('a'):
-            first = n
-        n = last
-        while n + 1 in by_n and not tagged(n + 1) and not by_n[n].get('a'):
-            n += 1
-        if by_n[n].get('a') or n + 1 not in by_n:
-            last = n
-        span = [t for t in tokens if first <= t['n'] <= last]
-        return ' '.join(t['t'] + (t.get('a', '') if i < len(span) - 1 or keep_end else '') for i, t in enumerate(span))
+    def span(self, first, last):
+        """Every KJV word from first to last, inclusive, across verses:
+        [(chapter, verse, token)]."""
+        book, c1, v1, n1 = parse_kjv(first)
+        _, c2, v2, n2 = parse_kjv(last)
+        return [(c['chapter'], v['verse'], t) for c in self.book(book)['chapters'] for v in c['verses']
+                for t in v['tokens'] if (c1, v1, n1) <= (c['chapter'], v['verse'], t['n']) <= (c2, v2, n2)]
+
+    def text(self, first, last):
+        words = [t['t'] + t.get('a', '') for _, _, t in self.span(first, last)]
+        return re.sub(r'[,;:.)]+$', '', ' '.join(words))
 
 
-def _between(self, book, c1, v1, c2, v2):
-    self.verse(book, c1, v1)
-    out = []
-    for c in self.books[book]['chapters']:
-        for v in c['verses']:
-            if (c1, v1) <= (c['chapter'], v['verse']) <= (c2, v2):
-                out.append((c['chapter'], v['verse'], None, None))
-    return out
+def slots(t):
+    return [k for k in [t.get('k'), *(t.get('ka') or [])] if k]
 
 
-KJV.verses_between = _between
+def vid(book, chapter, verse, slot):
+    return f'V.{book}.{chapter:03d}.{verse:03d}:{slot}'
 
 
-def reference(vid):
-    book, chapter, verse, _ = parse(vid)
+def derive(e, kjv):
+    """The entry's Vault IDs, from its KJV anchors and the KJV's alignment.
+    A part with no aligned words yet comes back empty."""
+    names = []
+    for kid in e['kjv']['name']:
+        book, c, v, _ = parse_kjv(kid)
+        names += [vid(book, c, v, k) for k in slots(kjv.word(kid))]
+    book = parse_kjv(e['kjv']['because'][0])[0]
+    hits = sorted({(c, v, slot_rank(k), k) for c, v, t in kjv.span(*e['kjv']['because']) for k in slots(t)})
+    because = [vid(book, *hits[0][:2], hits[0][3]), vid(book, *hits[-1][:2], hits[-1][3])] if hits else []
+    return {'name': list(dict.fromkeys(names)), 'because': because}
+
+
+def reference(kid):
+    book, chapter, verse, _ = parse_kjv(kid)
     return f'{BOOKS[book]} {chapter}:{verse}'
 
 
@@ -182,9 +182,9 @@ def write_review(rows):
     out += ['', '## Every entry', '']
     for r in rows:
         where = r['explained_at'] if r['named_at'] == r['explained_at'] else f"named {r['named_at']}, explained {r['explained_at']}"
-        out += [f"### {r['name']} · {r['original']}", '',
+        out += [f"### {r['name']} · {r['original'] or '(not aligned yet)'}", '',
                 f"{where} · {kinds[r['kind']]} · found by {r['found_by']}" + (f" · bible-data `{r['bible_data']}`" if r['bible_data'] else ''), '',
-                f"> {r['kjv_reason'] or '(no KJV words aligned to the reason yet)'}", '']
+                f"> {r['kjv_reason']}", '']
         if r['note']:
             out += [f"*{r['note']}*", '']
     (HERE / 'docs/review.md').write_text('\n'.join(out))
@@ -195,65 +195,79 @@ def main():
     ap.add_argument('--vault', required=True)
     ap.add_argument('--kjv', required=True)
     ap.add_argument('--accept', action='store_true',
-                    help='record the current Vault words as the anchors (after re-checking drifted entries)')
+                    help='record the current KJV words as the anchors (only if the KJV was deliberately re-issued)')
     args = ap.parse_args()
     vault, kjv = Vault(args.vault), KJV(args.kjv)
     data = json.loads((HERE / 'data/explanations.json').read_text())
-    rows, problems = [], []
+    rows, problems, unaligned, moved = [], [], [], []
     for e in data['entries']:
         try:
-            names = [vault.token(v) for v in e['name']]
-            # A name written as several words (Jehovah-jireh: יְהוָה יִרְאֶה) needs
-            # only one of them to carry the entry's number.
-            if not any(base(t.get('s')) == base(e['strongs']) or base(e['strongs']) in map(base, t.get('sa') or [])
-                       for t in names):
-                problems.append(f"{e['id']}: no name token is {e['strongs']}")
-            first, last = e['because']
-            vault.token(first), vault.token(last)
-            a, b = parse(first), parse(last)
-            if a[0] != b[0] or (a[1], a[2], slot_rank(a[3])) > (b[1], b[2], slot_rank(b[3])):
+            first, last = e['kjv']['because']
+            if parse_kjv(first)[0] != parse_kjv(last)[0] or parse_kjv(first)[1:] > parse_kjv(last)[1:]:
                 problems.append(f"{e['id']}: reason endpoints out of order")
-        except (ValueError, FileNotFoundError) as err:
+                continue
+            for kid in e['kjv']['name'] + [first, last]:
+                kjv.word(kid)
+            derived = derive(e, kjv)
+            names = [vault.token(v) for v in derived['name']]
+            for v in derived['because']:
+                vault.token(v)
+        except (ValueError, KeyError, FileNotFoundError) as err:
             problems.append(f"{e['id']}: {err}")
             continue
+        # A name written as several words (Jehovah-jireh: יְהוָה יִרְאֶה) needs
+        # only one of them to carry the entry's number.
+        if names and not any(base(t.get('s')) == base(e['strongs']) or base(e['strongs']) in map(base, t.get('sa') or [])
+                             for t in names):
+            problems.append(f"{e['id']}: no name token is {e['strongs']}")
+        if not derived['name'] or not derived['because']:
+            unaligned.append(e['id'])
+        if derived != e.get('vault'):
+            moved.append(e['id'])
+        e['vault'] = derived
         rows.append({
             'id': e['id'],
             'name': e['name_en'],
             'strongs': e['strongs'],
             'original': ' '.join(t['t'].replace('/', '') for t in names),
             'kind': e['kind'],
-            'named_at': reference(e['name'][0]),
+            'named_at': reference(e['kjv']['name'][0]),
             'explained_at': reference(first),
-            'kjv_reason': kjv.words(first, last),
-            'name_tokens': ' '.join(e['name']),
-            'reason_from': first,
-            'reason_to': last,
+            'kjv_name': ' '.join(kjv.word(k)['t'] for k in e['kjv']['name']),
+            'kjv_reason': kjv.text(first, last),
+            'kjv_name_words': ' '.join(e['kjv']['name']),
+            'kjv_reason_from': first,
+            'kjv_reason_to': last,
+            'vault_name': ' '.join(derived['name']),
+            'vault_reason_from': derived['because'][0] if derived['because'] else '',
+            'vault_reason_to': derived['because'][-1] if derived['because'] else '',
             'found_by': ' '.join(e['found_by']),
             'note': e.get('note', ''),
             'bible_data': ' '.join(e['bible_data']) if isinstance(e.get('bible_data'), list) else e.get('bible_data', ''),
         })
-    # Anchors: the word behind every token ID the list uses.
+    # Anchors: the KJV word behind every anchor. The KJV is settled, so these
+    # should never differ; if one does, the KJV package was re-issued and every
+    # entry it touches needs a look.
     anchor_path = HERE / 'data/anchors.json'
     anchors = json.loads(anchor_path.read_text()) if anchor_path.exists() else {}
     current = {}
     for e in data['entries']:
-        for vid in e['name'] + e['because']:
+        for kid in e['kjv']['name'] + e['kjv']['because']:
             try:
-                t = vault.token(vid)
-            except (ValueError, FileNotFoundError):
-                continue
-            current[vid] = {'t': t['t'], 's': t.get('s', '')}
-    drifted = sorted({e['id'] for e in data['entries'] for vid in e['name'] + e['because']
-                      if vid in anchors and vid in current and anchors[vid] != current[vid]})
+                current[kid] = kjv.word(kid)['t']
+            except ValueError:
+                pass
+    drifted = sorted({e['id'] for e in data['entries'] for kid in e['kjv']['name'] + e['kjv']['because']
+                      if kid in anchors and kid in current and anchors[kid] != current[kid]})
     if drifted and not args.accept:
-        problems.append('These entries point at Vault words that changed; re-check them, then run with --accept:\n  '
-                        + '\n  '.join(drifted))
+        problems.append('The KJV words under these entries changed (the KJV should never change); '
+                        're-check them, then run with --accept:\n  ' + '\n  '.join(drifted))
     if problems:
         print('\n'.join(problems), file=sys.stderr)
         sys.exit(1)
-    new = sorted(set(current) - set(anchors))
-    if args.accept or new:
+    if args.accept or set(current) != set(anchors):
         anchor_path.write_text(json.dumps(dict(sorted(current.items())), ensure_ascii=False, indent=1) + '\n')
+    (HERE / 'data/explanations.json').write_text(json.dumps(data, ensure_ascii=False, indent=1) + '\n')
 
     with open(HERE / 'data/explanations.csv', 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]))
@@ -263,8 +277,8 @@ def main():
     kinds = {'naming': 'Names given with a reason', 'renaming': 'Names changed, with a reason',
              'gloss': 'Names translated in the text'}
     out = ['# The list', '',
-           f"{len(rows)} places where Scripture explains a name. The reason is quoted from the KJV; "
-           'the data records it as original-language token ranges, so it reads in any keyed translation.', '']
+           f"{len(rows)} places where Scripture explains a name, quoted from the KJV. Each is anchored to KJV words; "
+           'the original-language words come from the KJV\'s alignment, so they read in any keyed translation.', '']
     for kind, title in kinds.items():
         group = [r for r in rows if r['kind'] == kind]
         if not group:
@@ -272,11 +286,16 @@ def main():
         out += [f'## {title} ({len(group)})', '', '| Name | | Where | The text says |', '|---|---|---|---|']
         for r in group:
             where = r['explained_at'] if r['named_at'] == r['explained_at'] else f"{r['named_at']}; {r['explained_at']}"
-            out.append(f"| {r['name']} | {r['original']} | {where} | {r['kjv_reason'] or '—'} |")
+            out.append(f"| {r['name']} | {r['original']} | {where} | {r['kjv_reason']} |")
         out.append('')
     (HERE / 'docs/list.md').write_text('\n'.join(out))
     write_review(rows)
     print(f'{len(rows)} entries checked and written')
+    if moved:
+        print(f'{len(moved)} Vault ranges re-derived from the KJV alignment: ' + ', '.join(moved))
+    if unaligned:
+        print(f'{len(unaligned)} not fully aligned yet (their Vault IDs fill in as the alignment does): '
+              + ', '.join(unaligned))
 
 
 if __name__ == '__main__':

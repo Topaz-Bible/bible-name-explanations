@@ -26,19 +26,22 @@ covers the Bible's own explanations.
 |---|---|
 | [`docs/list.md`](docs/list.md) | **For readers.** Every explanation, with the reason quoted from the KJV |
 | [`docs/review.md`](docs/review.md) | **For proofreading.** Every entry as a short block, judgement calls first |
-| [`data/explanations.json`](data/explanations.json) | The data: one entry per explanation, with original-language token ranges |
+| [`data/explanations.json`](data/explanations.json) | The data: one entry per explanation, anchored to KJV words, with the Vault (original-language) IDs worked out from them |
 | [`data/explanations.csv`](data/explanations.csv) | The same with references and text, one row each, for spreadsheets |
 | [`data/candidates.json`](data/candidates.json) | Passages still to check, and [`docs/coverage.md`](docs/coverage.md), where each stands |
 | [`docs/how-it-works.md`](docs/how-it-works.md) | The fields, how entries are found and checked, and what counts |
 | [`tools/`](tools) | `build.py` checks every entry and writes the list and CSV; `coverage.py` updates the coverage page |
 
-## Translation-independent
+## Anchored to the KJV, read in any translation
 
-Each entry points into the Hebrew or Greek, not at English words. The name and
-the reason are **token IDs in the Keyway Token Vault**: `V.EXO.002.010:011a`
-is Exodus 2:10, word slot 011a. Any translation aligned to those words can
-quote the reason in its own wording. The KJV text in the list and CSV is
-generated from that alignment.
+Each entry is anchored to **KJV word positions**: `EXO.002.010:014` is Exodus
+2:10, word 14 of the KJV. The KJV is a settled text, so the anchors never
+change, and the quotes in the list are exactly those words.
+
+From the anchors, the build works out the matching Hebrew or Greek words, as
+**token IDs in the Keyway Token Vault** (`V.EXO.002.010:011a`), through the
+KJV's word alignment. Any translation aligned to the Vault can then quote the
+reason in its own wording.
 
 ## Kinds
 
@@ -49,10 +52,14 @@ generated from that alignment.
 ## Keeping up with the Vault
 
 The Token Vault grows: as manuscript readings are added, new slots appear and
-words can move. Every token ID this list uses is recorded with the word it
-points at ([`data/anchors.json`](data/anchors.json)). When the Vault changes,
-`tools/build.py` compares, and stops with the entries to re-check if any word
-moved. After re-checking, `--accept` records the new words. Expect this often.
+words can move, and the KJV's alignment to it keeps improving. None of that
+touches the KJV anchors. Each build works out the Vault IDs again from the
+current alignment, so they correct themselves; the build lists the entries
+whose IDs changed, and those whose words aren't aligned yet. Expect this
+often.
+
+[`data/anchors.json`](data/anchors.json) records the KJV word behind every
+anchor, so if the KJV itself were ever re-issued, the build would stop.
 
 ## Corrections and additions
 

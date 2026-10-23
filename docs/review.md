@@ -51,11 +51,11 @@ Genesis 16:11 · named · found by formula bdb kjv · bible-data `person:Ishmael
 
 > because the Lord hath heard thy affliction
 
-### Beer-lahai-roi · בְּאֵ֥ר לַחַ֖י רֹאִ֑י
+### Beer-lahai-roi · (not aligned yet)
 
 named Genesis 16:14, explained Genesis 16:13 · named · found by review · bible-data `place:Beer-lahai-roi_1`
 
-> Thou God seest me: for she said, Have I also here looked after him that seeth me
+> Thou God seest me: for she said, Have I also here looked after him that seeth me?
 
 *Hagar names the well after her words to God in the verse before.*
 
@@ -69,7 +69,7 @@ Genesis 17:5 · renamed · found by formula · bible-data `person:Abram_1`
 
 named Genesis 19:22, explained Genesis 19:20 · named · found by review · bible-data `place:Zoar_1`
 
-> is it not a little one
+> is it not a little one?
 
 *Named in 19:22 after Lot's plea in 19:20 ("is it not a little one?").*
 
@@ -81,13 +81,13 @@ named Genesis 21:3, explained Genesis 21:6 · named · found by review · bible-
 
 *Named in 21:3; Sarah's explanation is in 21:6.*
 
-### Beersheba · בְּאֵ֣ר שָׁ֑בַע
+### Beersheba · (not aligned yet)
 
 Genesis 21:31 · named · found by formula · bible-data `place:Beersheba_1`
 
 > because there they sware both of them
 
-### Jehovah-jireh · יְהוָ֣ה יִרְאֶ֑ה
+### Jehovah-jireh · (not aligned yet)
 
 Genesis 22:14 · named · found by review · bible-data `place:The LORD Will Provide_1`
 
@@ -123,9 +123,7 @@ Genesis 26:20 · named · found by formula kjv · bible-data `place:Esek_1`
 
 Genesis 26:21 · named · found by review · bible-data `place:Sitnah_1`
 
-> and strove
-
-*The KJV's "for that also" isn't aligned to these Hebrew words yet, so the quote stops at "strove".*
+> strove for that also
 
 ### Rehoboth · רְחֹב֔וֹת
 
@@ -141,7 +139,7 @@ Genesis 27:36 · translated in the text · found by review · bible-data `person
 
 *Esau's own reading of the name ("Is not he rightly named Jacob?").*
 
-### Bethel · בֵּֽית אֵ֑ל
+### Bethel · אֵ֑ל
 
 named Genesis 28:19, explained Genesis 28:17 · named · found by review · bible-data `place:Bethel_1`
 
@@ -159,9 +157,7 @@ Genesis 29:32 · named · found by formula kjv · bible-data `person:Reuben_1`
 
 Genesis 29:33 · named · found by formula bdb kjv · bible-data `person:Simeon_1`
 
-> Because the Lord hath heard that I was hated, he hath therefore given me this
-
-*The KJV's closing "son also" isn't aligned to these Hebrew words yet, so the quote stops at "this".*
+> Because the Lord hath heard that I was hated, he hath therefore given me this son also
 
 ### Levi · לֵוִֽי
 
@@ -191,9 +187,7 @@ Genesis 30:8 · named · found by formula kjv · bible-data `person:Naphtali_1`
 
 Genesis 30:11 · named · found by formula kjv · bible-data `person:Gad_1`
 
-> (no KJV words aligned to the reason yet)
-
-*No KJV quote: Leah's words ("A troop cometh") are a Ketiv/Qere reading not yet aligned in the KJV.*
+> A troop cometh
 
 ### Asher · אָשֵֽׁר
 
@@ -257,13 +251,13 @@ Genesis 32:30 · named · found by formula kjv · bible-data `place:Peniel_1`
 
 > for I have seen God face to face, and my life is preserved
 
-### Succoth · סֻכּֽוֹת
+### Succoth · (not aligned yet)
 
 Genesis 33:17 · named · found by review · bible-data `place:Succoth_1`
 
-> and made booths for his cattle
+> made booths for his cattle
 
-### El-bethel · אֵ֖ל בֵּֽית אֵ֑ל
+### El-bethel · (not aligned yet)
 
 Genesis 35:7 · named · found by formula · bible-data `place:El-bethel_1`
 
@@ -273,9 +267,7 @@ Genesis 35:7 · named · found by formula · bible-data `place:El-bethel_1`
 
 Genesis 38:29 · named · found by formula · bible-data `person:Perez_1`
 
-> How hast thou broken forth? this breach
-
-*The KJV's "be upon thee" isn't aligned to these Hebrew words yet, so the quote stops at "breach".*
+> How hast thou broken forth? this breach be upon thee
 
 ### Manasseh · מְנַשֶּׁ֑ה
 
@@ -289,7 +281,7 @@ Genesis 41:52 · named · found by formula · bible-data `person:Ephraim_1`
 
 > For God hath caused me to be fruitful in the land of my affliction
 
-### Abel-mizraim · אָבֵ֣ל מִצְרַ֔יִם
+### Abel-mizraim · מִצְרַ֔יִם
 
 Genesis 50:11 · named · found by formula · bible-data `place:Atad_1`
 
@@ -317,15 +309,15 @@ Exodus 15:23 · named · found by review
 
 Exodus 17:7 · named · found by review
 
-> because of the chiding of the children of Israel, and because they tempted the Lord, saying, Is the Lord among us
+> because they tempted the Lord, saying, Is the Lord among us, or not?
 
 ### Meribah · וּמְרִיבָ֑ה
 
 Exodus 17:7 · named · found by review
 
-> because of the chiding of the children of Israel, and because they tempted the Lord, saying, Is the Lord among us
+> because of the chiding of the children of Israel
 
-### Jehovah-nissi · יְהוָ֥ה נִסִּֽי
+### Jehovah-nissi · (not aligned yet)
 
 named Exodus 17:15, explained Exodus 17:16 · named · found by review
 
@@ -351,7 +343,7 @@ Numbers 11:3 · named · found by formula kjv
 
 > because the fire of the Lord burnt among them
 
-### Kibroth-hattaavah · קִבְר֣וֹת הַֽתַּאֲוָ֑ה
+### Kibroth-hattaavah · הַֽתַּאֲוָ֑ה
 
 Numbers 11:34 · named · found by formula kjv
 
@@ -405,7 +397,7 @@ named Judges 2:5, explained Judges 2:4 · named · found by review
 
 *Named in 2:5 after the weeping in 2:4.*
 
-### Jehovah-shalom · יְהוָ֖ה שָׁל֑וֹם
+### Jehovah-shalom · (not aligned yet)
 
 named Judges 6:24, explained Judges 6:23 · named · found by review · bible-data `person:YHVH_1`
 
@@ -421,7 +413,7 @@ Judges 6:32 · renamed · found by review · bible-data `person:Gideon_1`
 
 *Gideon's new name.*
 
-### En-hakkore · עֵ֤ין הַקּוֹרֵא֙
+### En-hakkore · הַקּוֹרֵא֙
 
 named Judges 15:19, explained Judges 15:18 · named · found by review
 
@@ -441,13 +433,13 @@ Ruth 1:20 · renamed · found by review · bible-data `person:Naomi_1`
 
 > Because I have asked him of the Lord
 
-### Ichabod · אִֽי כָבוֹד֙
+### Ichabod · כָבוֹד֙
 
 1 Samuel 4:21 · named · found by review · bible-data `person:Ichabod_1`
 
 > The glory is departed from Israel
 
-### Ebenezer · אֶ֣בֶן הָעָ֑זֶר
+### Ebenezer · הָעָ֑זֶר
 
 1 Samuel 7:12 · named · found by review
 
@@ -459,13 +451,13 @@ Ruth 1:20 · renamed · found by review · bible-data `person:Naomi_1`
 
 > for as his name is, so is he; Nabal is his name, and folly is with him
 
-### Baal-perazim · בַּ֥עַל פְּרָצִֽים
+### Baal-perazim · פְּרָצִֽים
 
 2 Samuel 5:20 · named · found by formula kjv
 
 > The Lord hath broken forth upon mine enemies before me, as the breach of waters
 
-### Perez-uzzah · פֶּ֣רֶץ עֻזָּ֔ה
+### Perez-uzzah · עֻזָּ֔ה
 
 2 Samuel 6:8 · named · found by review
 
@@ -477,7 +469,7 @@ Ruth 1:20 · renamed · found by review · bible-data `person:Naomi_1`
 
 > because of the Lord
 
-### Absalom's place · יַ֣ד אַבְשָׁלֹ֔ם
+### Absalom's place · יַ֣ד
 
 2 Samuel 18:18 · named · found by review
 
@@ -503,7 +495,7 @@ Ruth 1:20 · renamed · found by review · bible-data `person:Naomi_1`
 
 > because it went evil with his house
 
-### Perez-uzza · פֶּ֣רֶץ עֻזָּ֔א
+### Perez-uzza · עֻזָּ֔א
 
 1 Chronicles 13:11 · named · found by review
 
@@ -511,7 +503,7 @@ Ruth 1:20 · renamed · found by review · bible-data `person:Naomi_1`
 
 *Parallel to 2 Samuel 6:8.*
 
-### Baal-perazim · בַּ֥עַל פְּרָצִֽים
+### Baal-perazim · פְּרָצִֽים
 
 1 Chronicles 14:11 · named · found by formula kjv
 
@@ -525,13 +517,13 @@ Ruth 1:20 · renamed · found by review · bible-data `person:Naomi_1`
 
 *God's own explanation of the name to David.*
 
-### Berachah · עֵ֥מֶק בְּרָכָ֖ה
+### Berachah · בְּרָכָ֖ה
 
 2 Chronicles 20:26 · named · found by review · bible-data `person:Beracah_1`
 
 > for there they blessed the Lord
 
-### Maher-shalal-hash-baz · מַהֵ֥ר שָׁלָ֖ל חָ֥שׁ בַּֽז
+### Maher-shalal-hash-baz · בַּֽז
 
 named Isaiah 8:3, explained Isaiah 8:4 · named · found by review · bible-data `person:Immanuel_1`
 
@@ -539,7 +531,7 @@ named Isaiah 8:3, explained Isaiah 8:4 · named · found by review · bible-data
 
 *Named in 8:3; the reason follows in 8:4.*
 
-### Hephzibah · חֶפְצִי בָ֔הּ
+### Hephzibah · בָ֔הּ
 
 Isaiah 62:4 · renamed · found by review · bible-data `person:Hephzibah_1`
 
@@ -547,15 +539,15 @@ Isaiah 62:4 · renamed · found by review · bible-data `person:Hephzibah_1`
 
 *Zion renamed: no longer "Forsaken".*
 
-### Beulah · בְּעוּלָ֑ה
+### Beulah · (not aligned yet)
 
 Isaiah 62:4 · renamed · found by review
 
-> (no KJV words aligned to the reason yet)
+> and thy land shall be married
 
-*The land renamed: no longer "Desolate". No KJV quote: "married" isn't aligned to the Hebrew yet.*
+*The land renamed: no longer "Desolate".*
 
-### Magor-missabib · מָג֥וֹר מִסָּבִֽיב
+### Magor-missabib · מִסָּבִֽיב
 
 named Jeremiah 20:3, explained Jeremiah 20:4 · renamed · found by review · bible-data `person:Pashhur_2`
 
@@ -569,13 +561,13 @@ Hosea 1:4 · named · found by formula kjv · bible-data `person:Jezreel_2`
 
 > for yet a little while, and I will avenge the blood of Jezreel upon the house of Jehu, and will cause to cease the kingdom of the house of Israel
 
-### Lo-ruhamah · לֹ֣א רֻחָ֑מָה
+### Lo-ruhamah · רֻחָ֑מָה
 
 Hosea 1:6 · named · found by formula kjv · bible-data `person:Lo-ruhamah_1`
 
 > for I will no more have mercy upon the house of Israel
 
-### Lo-ammi · לֹ֣א עַמִּ֑י
+### Lo-ammi · עַמִּ֑י
 
 Hosea 1:9 · named · found by formula kjv · bible-data `person:Lo-ammi_1`
 
@@ -605,7 +597,7 @@ Matthew 27:33 · translated in the text · found by formula kjv
 
 > a place of a skull
 
-### Boanerges · βοανηργες
+### Boanerges · βοανεργες
 
 Mark 3:17 · translated in the text · found by formula · bible-data `person:James_1 person:John_2`
 
@@ -619,7 +611,7 @@ Mark 14:36 · translated in the text · found by review · bible-data `person:YH
 
 *A title, not a name.*
 
-### Golgotha · γολγοθαν
+### Golgotha · γολγοθα
 
 Mark 15:22 · translated in the text · found by review
 
@@ -677,9 +669,9 @@ John 19:13 · translated in the text · found by review
 
 John 19:17 · translated in the text · found by review
 
-> place called the place of a skull
+> the place of a skull
 
-*John gives the Greek first, then the Hebrew name. The KJV alignment pulls in "place called" from the start of the phrase.*
+*John gives the Greek first, then the Hebrew name.*
 
 ### Rabboni · ραββουνι
 
@@ -727,12 +719,12 @@ Galatians 4:6 · translated in the text · found by review · bible-data `person
 
 named Hebrews 7:1, explained Hebrews 7:2 · translated in the text · found by review · bible-data `person:Melchizedek_1`
 
-> interpretation King of righteousness
+> by interpretation King of righteousness
 
-*Named in 7:1, translated in 7:2. The KJV's "by" isn't aligned, so the quote starts at "interpretation".*
+*Named in 7:1, translated in 7:2.*
 
 ### Salem · σαλημ
 
 Hebrews 7:2 · translated in the text · found by formula kjv · bible-data `place:Jerusalem_1`
 
-> peace
+> King of peace

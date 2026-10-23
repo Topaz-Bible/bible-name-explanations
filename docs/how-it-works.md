@@ -8,16 +8,30 @@
   "name_en": "Moses",
   "strongs": "H4872",
   "kind": "naming",
-  "name": ["V.EXO.002.010:011a"],
-  "because": ["V.EXO.002.010:013a", "V.EXO.002.010:016a"],
+  "kjv": {
+    "name": ["EXO.002.010:014"],
+    "because": ["EXO.002.010:019", "EXO.002.010:027"]
+  },
+  "vault": {
+    "name": ["V.EXO.002.010:011a"],
+    "because": ["V.EXO.002.010:015a", "V.EXO.002.010:016a"]
+  },
   "found_by": ["formula", "kjv"],
   "bible_data": "person:Moses_1"
 }
 ```
 
-- **`name`**: the token(s) of the name where it's given. A name written as two
-  words (Ebenezer, Beer-sheba) lists both.
-- **`because`**: the first and last token of the reason, inclusive.
+- **`kjv`**: the anchor, and the part people edit. `name` is the KJV word(s)
+  of the name where it's given; `because` is the first and last word of the
+  reason, inclusive. IDs are book + chapter + verse, `:` + the word's number
+  in the verse of the Topaz KJV (the same addresses Topaz's commentary links
+  use). The KJV is a settled text, so these never change.
+- **`vault`**: worked out by `tools/build.py`; don't edit it. The Hebrew or
+  Greek words the anchored KJV words are aligned to, as Keyway Token Vault
+  addresses: `V.` + book + chapter + verse, `:` + slot (`011a`; a letter after
+  the number marks a variant or a word added later). `because` runs from the
+  first aligned slot to the last. Empty where the KJV words aren't aligned
+  yet.
 - **`strongs`**: the name's Strong's number, with STEP's disambiguating suffix
   where it has one (`G2424G`).
 - **`kind`**: `naming`, `renaming` or `gloss`.
@@ -32,9 +46,14 @@
 - **`note`** (optional): anything a proofreader should know. Notes beginning
   "Proofread:" mark judgement calls.
 
-Token IDs are Keyway Token Vault addresses: `V.` + book + chapter + verse, `:`
-+ slot. Slots number the original-language words of a verse (`001a`, `002a`;
-a letter after the number marks a variant or a word added later).
+## Why the KJV is the anchor
+
+The Hebrew and Greek side keeps changing: manuscript transcriptions add
+readings, readings add slots, and the KJV's word alignment to them is still
+being finished. The KJV is a settled, already-processed text, with nothing
+left to discover in it. So the KJV words are fixed by hand once, and the Vault
+IDs follow from the alignment: as it improves, they correct themselves, with
+no entry to re-check. Topaz's commentary links are anchored the same way.
 
 ## Across verses
 
@@ -66,13 +85,13 @@ Rabbi, Rabboni, Abba) are included. Excluded candidates and why are listed in
 
 ## Checks
 
-`tools/build.py` refuses to write the list unless every token ID exists in
-the Vault, at least one name token carries the entry's Strong's number (a
-name written as two words, like Jehovah-jireh, may be tagged on either), and
-every reason runs forward. It also compares every token ID with the word it
-pointed at when the entry was made (`data/anchors.json`) and stops, naming the
-entries, if any has changed. Re-check those entries, then build with
-`--accept`.
+`tools/build.py` refuses to write the list unless every KJV anchor exists, the
+reason runs forward, the derived Vault IDs exist, and at least one name word
+carries the entry's Strong's number (a name written as two words, like
+Jehovah-jireh, may be tagged on either). It also compares every anchor with
+the KJV word it held when the entry was made (`data/anchors.json`); the KJV
+shouldn't change, so a mismatch stops the build. Entries whose words aren't
+aligned yet are listed rather than refused.
 
 What counts: names that recur, where the explanation helps a reader across
 many verses, are the point. One-off names explained in the same verse with
@@ -86,11 +105,11 @@ python3 tools/coverage.py
 
 ## KJV quotes
 
-The quotes are generated from the KJV's word alignment, so they're only as
-complete as it is. Untagged words at a quote's edge are taken in when they run
-to punctuation ("I have gotten a man"), but not otherwise ("upon this rock",
-not "rock I will"). Where alignment gaps trim a quote, the entry's note says
-so (Simeon, Perez, Sitnah, Beulah, Gad).
+The quotes are the anchored KJV words exactly, so they don't depend on the
+alignment. Another keyed translation quotes the words aligned to the derived
+Vault slots, taking in unaligned words at the edges when they run to
+punctuation ("I have gotten a man") but not otherwise ("upon this rock", not
+"rock I will").
 
 ## Sources
 

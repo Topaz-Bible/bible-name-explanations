@@ -10,14 +10,14 @@ HERE = Path(__file__).resolve().parent.parent
 
 
 def verse(vid):
-    m = re.match(r'V\.(\w+)\.(\d+)\.(\d+)', vid)
+    m = re.match(r'(\w+)\.(\d+)\.(\d+)', vid)
     return f'{m.group(1)}.{int(m.group(2))}.{int(m.group(3))}'
 
 
 entries = json.loads((HERE / 'data/explanations.json').read_text())['entries']
 have = {}
 for e in entries:
-    for v in e['name'] + e['because']:
+    for v in e['kjv']['name'] + e['kjv']['because']:
         have.setdefault(verse(v), set()).add(e['id'])
 candidates = json.loads((HERE / 'data/candidates.json').read_text())['candidates']
 excluded = [c for c in candidates if c.get('decision') == 'excluded']
